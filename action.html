@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Run an action — Northline Help</title>
+    <title>Request a refund — Northline Help</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23020642'/%3E%3Cpath d='M8 17.5l5 5 11-12' fill='none' stroke='white' stroke-width='2.4'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./tokens.css" />
-    <link rel="stylesheet" href="./site.css?v=30" />
+    <link rel="stylesheet" href="./site.css?v=47" />
   </head>
   <body data-page="action" data-summary-placement="rail">
     <a class="skip" href="#main">Skip to content</a>
@@ -29,14 +29,14 @@
     <main id="main">
       <div class="wrap">
         <header class="page-head">
-          <h1 class="page-title">Refund the extra charge</h1>
-          <p class="lede">This sends $86 back on py_1044. It does not answer the dispute, and Friday’s payout stays where it is.</p>
+          <h1 class="page-title">Request a refund</h1>
+          <p class="lede">This asks Northline to return the extra $86 on order 1044. Confirm the details before you send it.</p>
         </header>
         <div class="summary-frame">
           <section class="form-card summary-main" id="action-card" aria-labelledby="action-heading">
             <header>
-              <h2 id="action-heading">New automation</h2>
-              <span class="status-chip">Runs after you confirm</span>
+              <h2 id="action-heading">Refund request</h2>
+              <span class="status-chip">Sends after you confirm</span>
             </header>
             <form id="action-form" novalidate>
               <div class="form-body">
@@ -44,25 +44,25 @@
                   <label for="action-type">Action</label>
                   <select id="action-type" name="action">
                     <option value="">Choose an action</option>
-                    <option value="review">Request a payout review</option>
-                    <option value="remind">Send an evidence reminder</option>
-                    <option value="refund" selected>Refund a payment</option>
-                    <option value="reset">Reset an authenticator</option>
+                    <option value="review">Check a missing refund</option>
+                    <option value="remind">Ask about a bank dispute</option>
+                    <option value="refund" selected>Request a refund</option>
+                    <option value="reset">Reset two-factor</option>
                   </select>
                   <span class="error"></span>
                 </div>
                 <div class="field" data-required>
-                  <label for="action-email">Account email</label>
-                  <input id="action-email" name="email" type="email" autocomplete="email" value="lena@northline.test" />
+                  <label for="action-email">Your email</label>
+                  <input id="action-email" name="email" type="email" autocomplete="email" value="jonah@northline.test" />
                   <span class="error"></span>
                 </div>
                 <div class="field">
-                  <label for="action-reference">Reference id</label>
-                  <input id="action-reference" name="reference" type="text" value="py_1044" />
+                  <label for="action-reference">Order or payment id</label>
+                  <input id="action-reference" name="reference" type="text" value="1044" />
                 </div>
                 <div class="field field--full">
-                  <label for="action-note">Note for the log</label>
-                  <textarea id="action-note" name="note">Jonah Hale, order 1044. py_1044 is the extra $86. py_1043 is the charge on dispute dp_3k19. Refunding only the extra one.</textarea>
+                  <label for="action-note">Note</label>
+                  <textarea id="action-note" name="note">Order 1044. Two $86 charges on my card. Please refund the extra one. I already opened a bank dispute on the other charge.</textarea>
                 </div>
               </div>
               <div class="form-footer">
@@ -86,6 +86,6 @@
         <a href="action.html">Action</a>
       </nav>
     </footer>
-    <script src="./site.js?v=29"></script>
+    <script src="./site.js?v=47"></script>
   </body>
 </html>

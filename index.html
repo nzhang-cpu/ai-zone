@@ -6,7 +6,7 @@
     <title>Northline Help Center</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23020642'/%3E%3Cpath d='M8 17.5l5 5 11-12' fill='none' stroke='white' stroke-width='2.4'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./tokens.css" />
-    <link rel="stylesheet" href="./site.css?v=30" />
+    <link rel="stylesheet" href="./site.css?v=47" />
   </head>
   <body data-page="home" data-summary-placement="float">
     <a class="skip" href="#main">Skip to content</a>
@@ -33,7 +33,7 @@
         <section class="hero">
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Support is online</p>
           <h1>How can we help?</h1>
-          <p class="lede">Say it the way the customer said it. You don’t have to know yet if this is a refund, a dispute, or a payout.</p>
+          <p class="lede">Tell us what happened. You don’t have to know yet if this is a refund, a bank dispute, or a missing credit.</p>
 
           <form class="search-shell" data-search-form role="search">
             <div class="search-top">
@@ -41,7 +41,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" />
                 </svg>
-                <input type="search" name="q" placeholder="A customer says I charged them twice" aria-label="Search help articles" autocomplete="off" />
+                <input type="search" name="q" placeholder="I was charged twice" aria-label="Search help articles" autocomplete="off" />
               </div>
               <button type="submit" class="btn-send" aria-label="Search">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -59,8 +59,8 @@
               </svg>
               Charged twice
             </button>
-            <button type="button" class="chip-theme" data-query="payout on hold">Payout is on hold</button>
-            <button type="button" class="chip-theme" data-query="dispute reason code">They opened a dispute</button>
+            <button type="button" class="chip-theme" data-query="refund not showing">My refund isn’t here</button>
+            <button type="button" class="chip-theme" data-query="dispute reason code">I opened a bank dispute</button>
             <button type="button" class="chip-theme" data-query="refund a payment">Refund the extra charge</button>
           </div>
         </section>
@@ -74,8 +74,8 @@
                   <path d="M12 8v5" /><path d="M12 16h.01" /><circle cx="12" cy="12" r="9" />
                 </svg>
               </span>
-              <h2>Disputes</h2>
-              <p>Respond before the deadline and send the evidence that matches the reason code.</p>
+              <h2>Bank disputes</h2>
+              <p>A charge you asked your bank to review, and what happens after you open it.</p>
             </a>
             <a class="topic-card" href="search.html?topic=Payouts">
               <span class="topic-icon" aria-hidden="true">
@@ -83,8 +83,8 @@
                   <rect x="3" y="6" width="18" height="12" rx="2" /><path d="M3 10h18" />
                 </svg>
               </span>
-              <h2>Payouts</h2>
-              <p>Holds, returned deposits, and how to update the bank account on file.</p>
+              <h2>Waiting on money</h2>
+              <p>A refund or credit that has not shown up on your statement yet.</p>
             </a>
             <a class="topic-card" href="search.html?topic=Verification">
               <span class="topic-icon" aria-hidden="true">
@@ -92,8 +92,8 @@
                   <path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z" />
                 </svg>
               </span>
-              <h2>Verification</h2>
-              <p>Identity, business documents, and where those files actually need to go.</p>
+              <h2>Your account</h2>
+              <p>The email on the order, a name check, and documents we asked you to send.</p>
             </a>
             <a class="topic-card" href="search.html?topic=Refunds">
               <span class="topic-icon" aria-hidden="true">
@@ -102,7 +102,7 @@
                 </svg>
               </span>
               <h2>Refunds</h2>
-              <p>Full and partial refunds, and what your customer sees on their statement.</p>
+              <p>Full and partial refunds, and what you see on your card statement.</p>
             </a>
             <a class="topic-card" href="search.html?topic=Security">
               <span class="topic-icon" aria-hidden="true">
@@ -110,8 +110,8 @@
                   <rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" />
                 </svg>
               </span>
-              <h2>Security</h2>
-              <p>Two-factor authentication, recovery codes, and lost-device resets.</p>
+              <h2>Sign-in & security</h2>
+              <p>Two-factor authentication, recovery codes, and a lost phone.</p>
             </a>
             <a class="topic-card" href="submit.html">
               <span class="topic-icon" aria-hidden="true">
@@ -120,7 +120,7 @@
                 </svg>
               </span>
               <h2>Contact support</h2>
-              <p>When what you need doesn’t clearly match an action, submit a case and describe it in the customer’s words.</p>
+              <p>When the articles don’t cover what you’re looking at, send a case in your own words.</p>
             </a>
           </div>
         </section>
@@ -132,8 +132,8 @@
 
         <section class="help-band">
           <div>
-            <h2>Not sure which action fits?</h2>
-            <p>Submit a case. It’s the usual path when the articles and the actions don’t cover what you’re looking at.</p>
+            <h2>Still stuck?</h2>
+            <p>Submit a case. Use that when the articles and the refund request don’t cover what you’re looking at.</p>
           </div>
           <a class="btn-primary" href="submit.html">Submit a case</a>
         </section>
@@ -151,6 +151,6 @@
         <a href="submit.html">Submit a case</a>
       </nav>
     </footer>
-    <script src="./site.js?v=29"></script>
+    <script src="./site.js?v=47"></script>
   </body>
 </html>

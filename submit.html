@@ -6,7 +6,7 @@
     <title>Submit a case — Northline Help</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23020642'/%3E%3Cpath d='M8 17.5l5 5 11-12' fill='none' stroke='white' stroke-width='2.4'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./tokens.css" />
-    <link rel="stylesheet" href="./site.css?v=30" />
+    <link rel="stylesheet" href="./site.css?v=47" />
   </head>
   <body data-page="submit" data-summary-placement="rail">
     <a class="skip" href="#main">Skip to content</a>
@@ -30,7 +30,7 @@
       <div class="wrap">
         <header class="page-head">
           <h1 class="page-title">Submit a case</h1>
-          <p class="lede">Use this when what you need doesn’t clearly match an action. Describe what happened, and include a payment or dispute id if you have one.</p>
+          <p class="lede">Use this when the articles don’t cover what happened. Describe it in your words, and include an order or payment id if you have one.</p>
         </header>
 
         <div class="summary-frame">
@@ -44,39 +44,39 @@
               <div class="form-body">
                 <div class="field" data-required>
                   <label for="name">Your name</label>
-                  <input id="name" name="name" type="text" autocomplete="name" value="Lena Ortiz" />
+                  <input id="name" name="name" type="text" autocomplete="name" value="Jonah Hale" />
                   <span class="error"></span>
                 </div>
                 <div class="field" data-required>
                   <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" value="lena@northline.test" />
+                  <input id="email" name="email" type="email" autocomplete="email" value="jonah@northline.test" />
                   <span class="error"></span>
                 </div>
                 <div class="field" data-required>
                   <label for="topic">Topic</label>
                   <select id="topic" name="topic">
                     <option value="">Select a topic</option>
-                    <option selected>Disputes</option>
-                    <option>Payouts</option>
-                    <option>Verification</option>
-                    <option>Refunds</option>
-                    <option>Security</option>
-                    <option>Something else</option>
+                    <option value="Disputes">Bank disputes</option>
+                    <option value="Payouts">Waiting on money</option>
+                    <option value="Verification">Your account</option>
+                    <option value="Refunds" selected>Refunds</option>
+                    <option value="Security">Sign-in & security</option>
+                    <option value="Something else">Something else</option>
                   </select>
                   <span class="error"></span>
                 </div>
                 <div class="field">
-                  <label for="reference">Payment or dispute id</label>
-                  <input id="reference" name="reference" type="text" value="dp_3k19" />
+                  <label for="reference">Order or payment id</label>
+                  <input id="reference" name="reference" type="text" value="1044" />
                 </div>
                 <div class="field field--full" data-required>
                   <label for="subject">Subject</label>
-                  <input id="subject" name="subject" type="text" value="Reason code says the order never arrived" />
+                  <input id="subject" name="subject" type="text" value="I was charged twice" />
                   <span class="error"></span>
                 </div>
                 <div class="field field--full" data-required>
                   <label for="details">What happened</label>
-                  <textarea id="details" name="details">I refunded the extra charge py_1044. Dispute dp_3k19 is on py_1043, and the reason is product not received. Jonah Hale received order 1044. I have the carrier scan. I need the reason moved so the packet matches. This is not a request to release Friday’s payout.</textarea>
+                  <textarea id="details" name="details">Order 1044. My card shows two $86 charges. I opened a dispute with my bank on one of them because it said the order never arrived — I have the package. I have not received a refund for the extra charge.</textarea>
                   <span class="error"></span>
                 </div>
                 <div class="field field--full">
@@ -116,6 +116,6 @@
         <a href="submit.html">Submit a case</a>
       </nav>
     </footer>
-    <script src="./site.js?v=29"></script>
+    <script src="./site.js?v=47"></script>
   </body>
 </html>

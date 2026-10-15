@@ -1,152 +1,152 @@
 const ARTICLES = [
   {
     id: "respond-dispute",
-    title: "How to respond to a dispute in your dashboard",
-    path: "Support / Disputes / Respond",
+    title: "What happens after you open a bank dispute",
+    path: "Help / Bank disputes / After you file",
     topic: "Disputes",
     updated: "May 2026",
     snippet:
-      "Gather shipping confirmation, proof of delivery, and customer communication before you submit evidence in Payments → Disputes.",
+      "Your bank asks Northline about one charge. That review stays on that charge even if another payment for the same order is refunded.",
     paragraphs: [
-      "A dispute opens when a cardholder questions a charge with their bank. You usually have a short window to send evidence before the case is decided for the customer.",
-      "Start in Payments → Disputes and open the case marked Needs response. The deadline shown there is the one that matters — bank mail dates can differ."
+      "A dispute is your bank asking about a charge you already paid. Northline has a short window to reply. You do not send that packet yourself.",
+      "If you were also charged twice, the extra payment is a different record. A refund of that extra charge does not close this dispute."
     ],
     steps: [
-      "Download the dispute notice and note the reason code.",
-      "Collect proof of delivery, a refund receipt if you already returned funds, and the customer thread.",
-      "Upload files under Submit evidence. Stick to the checklist for that reason code.",
-      "Send the response. You will get a confirmation email with the case id."
+      "Keep the letter or app notice from your bank.",
+      "Note which charge the bank is asking about — the date and the amount.",
+      "If you already have a refund of a different charge, keep that receipt.",
+      "Wait for the bank’s update. Status shows with your bank, not in a separate Northline inbox."
     ],
-    tags: ["dispute", "chargeback", "evidence", "respond", "dashboard"]
+    tags: ["dispute", "chargeback", "evidence", "respond", "dashboard", "charged", "twice"]
   },
   {
     id: "evidence-deadline",
-    title: "Dispute evidence deadlines and what to include",
-    path: "Support / Disputes / Evidence",
+    title: "The deadline on your bank dispute",
+    path: "Help / Bank disputes / Deadlines",
     topic: "Disputes",
     updated: "April 2026",
     snippet:
-      "Most card networks expect a response within 7 to 21 days. Late files are not reviewed, even if the charge was valid.",
+      "Your bank usually gives 7 to 21 days to reply. The date on the letter or app notice is the one that counts.",
     paragraphs: [
-      "Deadlines depend on the network and the reason code. The date in your dashboard already includes our processing buffer, so treat it as final.",
-      "Evidence should match the reason. A shipping dispute needs a carrier scan. A “product not as described” dispute needs the listing, photos, and the refund policy the customer accepted."
+      "Deadlines depend on the bank and the reason they gave. Treat the date on the notice as final.",
+      "Reply with what they asked for. A delivery question needs the receipt. A “charged twice” question needs both dates and amounts."
     ],
     steps: [
-      "Open the dispute and read the reason code before you gather files.",
-      "Name files clearly, such as tracking-1Z.pdf, and keep each under 5 MB.",
-      "Submit once. A second upload replaces the packet only if the deadline has not passed."
+      "Read the reason on the notice before you gather files.",
+      "Keep the receipt and the bank letter together.",
+      "Send the reply before the date on the notice."
     ],
     tags: ["dispute", "evidence", "deadline", "chargeback"]
   },
   {
     id: "payout-hold",
-    title: "Why a payout is on hold",
-    path: "Support / Payouts / Holds",
+    title: "A refund is taking longer than usual",
+    path: "Help / Waiting on money / Delays",
     topic: "Payouts",
     updated: "May 2026",
     snippet:
-      "Payouts pause for incomplete verification, a sudden dispute spike, or unusual volume. Clear every red-flagged field in Account details.",
+      "A refund or credit can sit longer than 10 business days if the bank is still posting it, or if we asked you to confirm the order.",
     paragraphs: [
-      "A hold does not cancel the balance. Funds stay in your account until the review finishes or you supply the missing detail.",
-      "The banner on Home names the reason. If several flags are listed, resolve them from top to bottom — later checks often depend on the first one."
+      "A delay does not cancel the refund. The money is still coming back to the same card once the bank posts it.",
+      "Search your statement for the original store name and the amount. It will not look like a new deposit from Northline."
     ],
     steps: [
-      "Open Account details and expand every field marked in red.",
-      "Upload a document that matches the legal name on the account.",
-      "If the hold cites dispute volume, respond to open disputes before requesting a review.",
-      "Use Request review when the checklist is clear. Most reviews finish within two business days."
+      "Check the refund email for the date and amount.",
+      "Search your statement for that amount and the original store name.",
+      "If we asked you to confirm the order, follow that link first.",
+      "Submit a case if it has been more than 10 business days and the credit is still missing."
     ],
     tags: ["payout", "hold", "verification", "reserve", "balance"]
   },
   {
     id: "failed-payout",
-    title: "A payout failed or was returned",
-    path: "Support / Payouts / Failures",
+    title: "A refund was sent back",
+    path: "Help / Waiting on money / Returned",
     topic: "Payouts",
     updated: "March 2026",
     snippet:
-      "Banks return payouts when the account number, routing number, or account name does not match. Update the destination and retry.",
+      "A refund can bounce if the card is closed or the bank cannot post the credit. We send it again once we have a working card.",
     paragraphs: [
-      "Returned payouts reappear in your balance the same day we receive the bank notice. The original payout row stays marked Returned.",
-      "Fix the bank account under Settings → Bank accounts, then choose Retry on the returned payout. Do not create a second destination for the same account."
+      "If the credit came back, it is not lost. We try the same card first. If that card is closed, we need another way to return the money.",
+      "Do not open a second bank dispute for the same extra charge while we resend the refund."
     ],
     steps: [
-      "Compare the account name with the legal entity on the Northline account.",
-      "Re-enter the routing and account numbers from a voided check or bank letter.",
-      "Retry the payout after the new account shows Verified."
+      "Check whether the card on the order is still open.",
+      "Reply to the refund email if we asked for a different card.",
+      "Wait for the new credit before you write the bank again."
     ],
     tags: ["payout", "failed", "returned", "bank", "routing"]
   },
   {
     id: "verify-account",
-    title: "Complete account verification",
-    path: "Support / Account / Verification",
+    title: "Confirm the email and name on the order",
+    path: "Help / Your account / Confirm details",
     topic: "Verification",
     updated: "June 2026",
     snippet:
-      "Verification asks for a government id and a document that ties the business to its address. Blurry photos and mismatched names are the usual reasons a check fails.",
+      "We may ask you to confirm the email and name on the order. Blurry photos and mismatched names are the usual reasons a check fails.",
     paragraphs: [
-      "We verify the person who owns the account and the business that receives payouts. Both need to match what you entered at signup.",
-      "Use a color photo of the full document. Cropping out the corners or covering the name with a finger will fail the check."
+      "We check that the person writing in matches the email and name on the charge. Both need to match what we have on the order.",
+      "Use a color photo of the full document if we asked for one. Cropping out the corners or covering the name will fail the check."
     ],
     steps: [
-      "Open Account → Verification.",
-      "Upload a passport, driver’s license, or national id for each owner over 25% .",
-      "Add a proof of address dated within 90 days: a bank statement or utility bill.",
-      "Submit and wait for the status to move from In review to Verified."
+      "Open the link in the request we sent.",
+      "Confirm the email and the name on the order.",
+      "If we asked for a document, send a clear photo of the full page.",
+      "Wait for the status to move from In review to Confirmed."
     ],
     tags: ["verification", "kyc", "identity", "document", "upload"]
   },
   {
     id: "upload-documents",
-    title: "Where to upload verification documents",
-    path: "Support / Account / Documents",
+    title: "Send a document we asked for",
+    path: "Help / Your account / Documents",
     topic: "Verification",
     updated: "February 2026",
     snippet:
-      "Documents go in Account → Verification, not in a support reply. Files sent by email are not attached to the review.",
+      "Use the link in the request. A file attached only to a support case is not always added to that review.",
     paragraphs: [
-      "Each requirement has its own upload slot. Putting a passport in the address slot, or the reverse, restarts that check.",
-      "Accepted types are PDF, JPG, and PNG. Password-protected files cannot be opened by the review team."
+      "Each request has its own upload. Putting the wrong file in the wrong slot restarts that check.",
+      "Accepted types are PDF, JPG, and PNG. Password-protected files cannot be opened."
     ],
     steps: [
-      "Sign in as the account owner. Staff roles can view status but cannot upload.",
-      "Use the slot named on the requirement, then select Submit documents.",
-      "If a file is rejected, read the note under the slot before uploading a new one."
+      "Open the link in the email we sent.",
+      "Use the slot named in the request, then submit.",
+      "If a file is rejected, read the note before sending a new one."
     ],
     tags: ["upload", "document", "verification", "identity"]
   },
   {
     id: "issue-refund",
-    title: "Refund a customer payment",
-    path: "Support / Payments / Refunds",
+    title: "How to request a refund",
+    path: "Help / Refunds / Request one",
     topic: "Refunds",
     updated: "May 2026",
     snippet:
-      "Full and partial refunds start from the payment page. Card refunds typically settle back to the customer in 5 to 10 business days.",
+      "Ask us to return a charge from the refund request. Card credits typically show in 5 to 10 business days.",
     paragraphs: [
-      "Refunds draw from your available balance. If the balance is short, the refund stays queued until the next successful charge covers it.",
-      "Refunding a disputed charge does not close the dispute. Respond in Disputes as well, and include the refund receipt as evidence."
+      "A refund goes back to the same card. It shows as a credit under the original store name, not as a new deposit.",
+      "Requesting a refund does not close a bank dispute you already opened on that charge or on another charge for the same order."
     ],
     steps: [
-      "Open Payments and select the charge.",
-      "Choose Refund, then Full or a partial amount.",
-      "Add an internal note your team can see later.",
-      "Confirm. The customer sees the credit on their card statement, not as a new deposit from you."
+      "Open the refund request and name the charge.",
+      "Choose a full refund or a partial amount.",
+      "Add the order id and what you see on your statement.",
+      "Confirm. Watch for the credit on the same card in 5 to 10 business days."
     ],
     tags: ["refund", "payment", "partial", "charge"]
   },
   {
     id: "two-factor",
     title: "Set up two-factor authentication",
-    path: "Support / Security / 2FA",
+    path: "Help / Sign-in / 2FA",
     topic: "Security",
     updated: "January 2026",
     snippet:
-      "An authenticator app is required for owners. SMS is a backup only, and it cannot be the only factor on an account that pays out.",
+      "An authenticator app is the main factor. SMS is a backup only, and it cannot be the only way back in.",
     paragraphs: [
       "Turn on two-factor from Settings → Security. Recovery codes are shown once — store them somewhere other than your email inbox.",
-      "If you lose the device, an owner can approve a reset from a previously trusted browser, or support can reset it after we verify the business."
+      "If you lose the device, a previously trusted browser can approve a reset, or support can reset it after we confirm the account is yours."
     ],
     steps: [
       "Install an authenticator app before you start.",
@@ -158,167 +158,167 @@ const ARTICLES = [
   },
   {
     id: "reason-codes",
-    title: "Dispute reason codes and the evidence that fits",
-    path: "Support / Disputes / Reason codes",
+    title: "What your bank’s reason means",
+    path: "Help / Bank disputes / Reasons",
     topic: "Disputes",
     updated: "June 2026",
     snippet:
-      "Each reason code asks for a different packet. A shipping code needs a carrier scan. A not-as-described code needs the listing and the policy the customer accepted.",
+      "Each reason asks for something different. A delivery question needs the receipt. A “charged twice” question needs both dates and amounts.",
     paragraphs: [
-      "The reason code is printed on the dispute and in the dashboard. Sending a generic “we shipped it” letter for every code is the usual reason a valid charge is lost.",
-      "If the code is unfamiliar, open the checklist on the dispute before you upload. The checklist is the same list the reviewer uses."
+      "The reason is printed on the letter or in your bank’s app. A generic reply that does not answer that reason usually does not help.",
+      "If the reason is unfamiliar, reply with the receipt and say which charge — the date and the amount — they are asking about."
     ],
     steps: [
-      "Read the reason code on the dispute, not the customer’s email subject.",
-      "Match each file to one line of the checklist.",
-      "Leave out internal notes and other customers’ data."
+      "Read the reason on the bank notice, not the email subject from the store.",
+      "Match what you send to that reason.",
+      "Leave out other orders that are not on the notice."
     ],
     tags: ["dispute", "reason", "code", "evidence", "chargeback"]
   },
   {
     id: "dispute-outcome",
-    title: "What happens after a dispute is won or lost",
-    path: "Support / Disputes / Outcomes",
+    title: "After your bank decides",
+    path: "Help / Bank disputes / Outcomes",
     topic: "Disputes",
     updated: "March 2026",
     snippet:
-      "A win returns the charge to your balance after the network releases it. A loss keeps the debit, and the dispute fee is not refunded.",
+      "If the bank sides with you, that charge comes off your card. If they do not, the charge stays, and a refund of a different charge is separate.",
     paragraphs: [
-      "Networks decide. We post the outcome on the dispute as soon as they send it, which can be weeks after you submitted evidence.",
-      "A won dispute can still be reversed if the cardholder’s bank files a second presentment. You’ll see a new row rather than an edit to the old one."
+      "Your bank decides. That can take weeks after you reply. Status shows with your bank, not in a separate Northline inbox.",
+      "A win on one charge does not refund a second charge for the same order. Those are still two payments."
     ],
     steps: [
-      "Watch the dispute status, not the payout calendar.",
-      "If you lost and you already refunded, open a case with both ids.",
-      "Do not issue a second refund for the same charge."
+      "Watch the status in your bank’s app.",
+      "If you lost and you already have a refund of another charge, keep both receipts.",
+      "Do not open a second dispute for a charge that was already refunded."
     ],
     tags: ["dispute", "won", "lost", "fee", "outcome"]
   },
   {
     id: "payout-schedule",
-    title: "When payouts are sent",
-    path: "Support / Payouts / Schedule",
+    title: "When a refund usually shows on your card",
+    path: "Help / Waiting on money / Timing",
     topic: "Payouts",
     updated: "April 2026",
     snippet:
-      "The default schedule pays out each business day for charges that have cleared. Weekends and bank holidays shift the deposit, not the balance.",
+      "Most refunds show in 5 to 10 business days. Weekends and bank holidays shift the post date, not the refund itself.",
     paragraphs: [
-      "A charge can be successful and still be ineligible for today’s payout if it has not cleared. The payout preview lists what is included.",
-      "Changing the schedule from daily to weekly takes effect on the next cutoff, not on a payout already in transit."
+      "A refund can be sent and still not appear today. Your bank decides the exact day it posts.",
+      "The credit uses the original store name. It will not look like a new deposit from Northline."
     ],
     steps: [
-      "Open Payouts → Schedule and note the cutoff time in your timezone.",
-      "Compare the preview with the balance on Home.",
-      "Save a schedule change before the cutoff if you want it to apply tomorrow."
+      "Note the refund date on the email or receipt.",
+      "Count 5 to 10 business days from that date.",
+      "Search your statement for the original store name and the amount."
     ],
     tags: ["payout", "schedule", "daily", "deposit", "cutoff"]
   },
   {
     id: "update-bank",
-    title: "Update the bank account on file",
-    path: "Support / Payouts / Bank account",
+    title: "The refund went to a closed card",
+    path: "Help / Waiting on money / Closed card",
     topic: "Payouts",
     updated: "May 2026",
     snippet:
-      "A new bank account has to be verified before it can receive a payout. The previous account keeps receiving funds until the new one shows Verified.",
+      "If the card on the order is closed, the credit often posts to the replacement card. If it comes back, we need another way to return the money.",
     paragraphs: [
-      "Account name, routing number, and account number are checked against the legal entity. A personal account cannot receive payouts for a company.",
-      "Verification is a small deposit or an instant check, depending on the bank. Don’t retry a payout to an account that still says Pending."
+      "Banks usually forward a credit to the new card with the same number. That can take longer than a normal refund.",
+      "If the credit comes back to us, reply with a working card or another way to receive it. Do not open a second bank dispute for the same extra charge."
     ],
     steps: [
-      "Open Settings → Bank accounts and add the new destination.",
-      "Wait until the status is Verified.",
-      "Set it as the payout account, then retry any returned payouts."
+      "Ask your bank if a credit was forwarded to a new card.",
+      "Reply to our email if we asked for another card.",
+      "Wait for the new credit before you write the bank again."
     ],
     tags: ["payout", "bank", "account", "routing", "verified"]
   },
   {
     id: "verification-rejected",
-    title: "Verification was rejected",
-    path: "Support / Account / Rejected",
+    title: "We couldn’t confirm your details",
+    path: "Help / Your account / Rejected",
     topic: "Verification",
     updated: "June 2026",
     snippet:
-      "A rejection names the slot that failed. Upload a new file there — resubmitting the same photo will fail again for the same reason.",
+      "A rejection names what failed. Send a new file there — resubmitting the same photo will fail again for the same reason.",
     paragraphs: [
-      "The note under the slot is the reviewer’s reason: blur, cropped corners, a name that doesn’t match, or a document older than 90 days.",
-      "Payouts stay paused until every rejected slot is cleared. Approving one document does not release a hold by itself."
+      "The note is the reason: blur, cropped corners, a name that doesn’t match, or a document older than 90 days.",
+      "A refund can wait until the details match. Approving one document does not finish every check."
     ],
     steps: [
-      "Open Account → Verification and read the note on the red slot.",
+      "Open the link in the request and read the note.",
       "Photograph the full document in even light, with all four corners visible.",
-      "Submit only that slot, then wait for In review to clear."
+      "Send only that file, then wait for In review to clear."
     ],
     tags: ["verification", "rejected", "document", "hold", "upload"]
   },
   {
     id: "add-owner",
-    title: "Add or remove a business owner",
-    path: "Support / Account / Owners",
+    title: "Someone else’s name is on the order",
+    path: "Help / Your account / Name on the order",
     topic: "Verification",
     updated: "January 2026",
     snippet:
-      "Anyone who owns 25% or more needs an identity check. Adding an owner pauses payouts until that person’s documents are verified.",
+      "We check the name and email on the charge. If someone else placed the order, they may need to write in, or you need to show you can speak for them.",
     paragraphs: [
-      "Ownership is whatever is on the formation documents, not the person who logs in most often.",
-      "Removing an owner does not delete their past verification. It stops them from being required on the next review."
+      "The name on the card and the email on the receipt are what we use. A different person writing in needs a match to one of those.",
+      "If you paid with someone else’s card, include that in the case and attach the receipt."
     ],
     steps: [
-      "Open Account → Business and edit Owners.",
-      "Enter the legal name exactly as it appears on the government id.",
-      "Upload that person’s id in the new slot before you request a review."
+      "Compare the name on the receipt with the name you are writing in.",
+      "If they do not match, say how you are connected to the order.",
+      "Attach the receipt so we can see the original name."
     ],
     tags: ["verification", "owner", "beneficial", "identity", "business"]
   },
   {
     id: "partial-refund",
-    title: "Partial refunds and what the customer sees",
-    path: "Support / Payments / Partial refunds",
+    title: "What a partial refund looks like",
+    path: "Help / Refunds / Partial refunds",
     topic: "Refunds",
     updated: "April 2026",
     snippet:
-      "A partial refund shows as a credit for that amount on the customer’s card statement. It does not change the original charge row to the new total.",
+      "A partial refund shows as a credit for that amount on your card. It does not change the original charge line to the new total.",
     paragraphs: [
-      "You can refund up to the original amount, across more than one partial refund. The payment page shows what is still refundable.",
-      "The statement descriptor stays the same as the original charge. Customers sometimes miss the credit because they look for a new merchant name."
+      "You can get more than one partial refund, up to the original amount. The original charge line stays as it was.",
+      "The statement name stays the same as the original charge. People sometimes miss the credit because they look for a new store name."
     ],
     steps: [
-      "Open the payment and choose Refund.",
-      "Enter the partial amount and an internal note.",
-      "Tell the customer the credit uses the original descriptor and can take 5 to 10 business days."
+      "Note the partial amount on the refund email.",
+      "Search your statement for that amount and the original store name.",
+      "Allow 5 to 10 business days before you write in."
     ],
     tags: ["refund", "partial", "statement", "descriptor", "payment"]
   },
   {
     id: "refund-balance",
-    title: "A refund is waiting on your balance",
-    path: "Support / Payments / Refund balance",
+    title: "Your refund is still processing",
+    path: "Help / Refunds / Processing",
     topic: "Refunds",
     updated: "February 2026",
     snippet:
-      "Refunds are paid from your available balance. If the balance is short, the refund stays queued until a new charge covers it.",
+      "A processing refund has not reached your bank yet. You will not see a credit until that step finishes.",
     paragraphs: [
-      "A queued refund is not sent to the card network yet. The customer will not see a credit until the queue clears.",
-      "You can cancel a queued refund from the payment page. Once it is submitted to the network, it cannot be recalled."
+      "Processing means we have the request and the credit has not posted. This is not the same as a refund that was sent back.",
+      "Once the bank has the credit, it cannot be pulled back. Watch your statement for the original store name."
     ],
     steps: [
-      "Open the payment and check the refund status.",
-      "If it says Queued, wait for the next successful charge or add funds if your account allows it.",
-      "Cancel the refund only if you do not want it to send."
+      "Check the refund email for a Processing or Sent status.",
+      "If it says Processing, wait through 5 to 10 business days.",
+      "Write in only if it is still missing after that window."
     ],
     tags: ["refund", "balance", "queued", "failed", "payment"]
   },
   {
     id: "lost-device",
     title: "Reset two-factor after a lost device",
-    path: "Support / Security / Lost device",
+    path: "Help / Sign-in / Lost device",
     topic: "Security",
     updated: "March 2026",
     snippet:
-      "An owner can approve a reset from a previously trusted browser. Otherwise support resets two-factor after the business is verified.",
+      "A previously trusted browser can approve a reset. Otherwise we reset two-factor after we confirm the account is yours.",
     paragraphs: [
-      "SMS backup codes cannot replace an authenticator on an account that pays out. You will set up a new app at the end of the reset.",
-      "A reset signs every session out, including staff who were signed in on shared computers."
+      "SMS backup codes cannot replace an authenticator. You will set up a new app at the end of the reset.",
+      "A reset signs every session out, including any other device that was signed in."
     ],
     steps: [
       "From a trusted browser, open Settings → Security → Lost device.",
@@ -330,7 +330,7 @@ const ARTICLES = [
   {
     id: "recovery-codes",
     title: "Recovery codes and trusted browsers",
-    path: "Support / Security / Recovery",
+    path: "Help / Sign-in / Recovery",
     topic: "Security",
     updated: "May 2026",
     snippet:
@@ -348,34 +348,34 @@ const ARTICLES = [
   },
   {
     id: "inquiry-vs-dispute",
-    title: "An inquiry is not a chargeback yet",
-    path: "Support / Disputes / Inquiries",
+    title: "Your bank asked for information",
+    path: "Help / Bank disputes / Inquiries",
     topic: "Disputes",
     updated: "June 2026",
     snippet:
-      "An inquiry asks for information and does not debit you. Answer it anyway — an ignored inquiry often becomes a chargeback.",
+      "An inquiry is your bank asking a question. It does not take the money yet. Answer it — an ignored inquiry often becomes a chargeback.",
     paragraphs: [
-      "The dashboard labels inquiries separately from disputes that need evidence. The deadline is shorter because the bank is still deciding whether to file.",
-      "A clear reply with the receipt and the delivery scan is usually enough to stop the inquiry."
+      "Your bank is still deciding whether to file a full dispute. The deadline on that letter is the one that counts.",
+      "A clear reply with the receipt is usually enough. If you were also charged twice, say which line the bank is asking about."
     ],
     steps: [
-      "Open the inquiry and read what the bank asked.",
-      "Attach the receipt and any delivery proof.",
-      "Send the reply before the date on the inquiry, not the later dispute date."
+      "Read what the bank asked.",
+      "Reply with the receipt and the date of the charge.",
+      "Send it before the date on the inquiry."
     ],
     tags: ["dispute", "inquiry", "chargeback", "retrieval"]
   },
   {
     id: "duplicate-charge",
     title: "Duplicate charges",
-    path: "Support / Disputes / Duplicates",
+    path: "Help / Charges / Duplicates",
     topic: "Disputes",
     updated: "April 2026",
     snippet:
       "Two lines on your statement are not always two payments. This page explains when you were actually charged twice, and what a refund changes.",
     paragraphs: [
       "A payment that failed and was tried again can look like two charges. Only successful payments count.",
-      "A refund returns one of those payments. It does not close a question you already opened with your bank."
+      "A refund returns the extra payment. It does not close a dispute you already opened with your bank on the other charge."
     ],
     steps: [
       "Check whether both charges say they went through.",
@@ -386,91 +386,91 @@ const ARTICLES = [
   },
   {
     id: "dispute-fee",
-    title: "Where the dispute fee shows up",
-    path: "Support / Disputes / Fees",
+    title: "Fees when you open a bank dispute",
+    path: "Help / Bank disputes / Fees",
     topic: "Disputes",
     updated: "January 2026",
     snippet:
-      "The dispute fee posts when the case opens, not when it is decided. A win does not return the fee.",
+      "Your bank may charge a fee when you open a dispute. That fee is between you and the bank. A refund from us does not cancel it.",
     paragraphs: [
-      "You will see the fee on the dispute and again in the balance activity for that day.",
-      "Refunding the customer does not remove the fee. The fee is charged by the card network for opening the case."
+      "The bank posts that fee on their side. We cannot reverse a bank fee from here.",
+      "A refund of the extra charge is separate from any fee your bank added."
     ],
     steps: [
-      "Open the dispute and check the fee line.",
-      "Match it to Balance → Activity on the same date.",
-      "Do not file a separate case only to ask for the fee back."
+      "Check your bank’s app for a dispute fee line.",
+      "Ask the bank about that fee if you want it reversed.",
+      "Do not open a Northline case only to ask for the bank fee back."
     ],
     tags: ["dispute", "fee", "balance", "chargeback"]
   },
   {
     id: "instant-payout",
-    title: "Instant payouts and the daily limit",
-    path: "Support / Payouts / Instant",
+    title: "Can I get the refund faster?",
+    path: "Help / Waiting on money / Faster",
     topic: "Payouts",
     updated: "May 2026",
     snippet:
-      "Instant payouts send to a debit card in minutes, up to the limit shown on the payout page. The fee is taken from the amount you send.",
+      "We cannot make your bank post a credit today. Once we send it, the card usually shows it in 5 to 10 business days.",
     paragraphs: [
-      "The limit resets each business day. A standard payout already in transit still counts against the available balance.",
-      "If the debit card is expired, the instant payout fails and the funds return to the balance."
+      "A case or a second request does not move the bank faster. The post date is theirs.",
+      "If the card is closed, ask the bank whether they forwarded the credit. That can add a few days."
     ],
     steps: [
-      "Open Payouts and choose Instant.",
-      "Enter an amount at or under the remaining limit.",
-      "Confirm the debit card before you send."
+      "Confirm we already sent the refund.",
+      "Count 5 to 10 business days from that date.",
+      "Write in only if the window has passed and the credit is still missing."
     ],
     tags: ["payout", "instant", "debit", "limit", "fee"]
   },
   {
     id: "negative-balance",
-    title: "Your balance went negative",
-    path: "Support / Payouts / Negative balance",
+    title: "A refund posted, then the charge came back",
+    path: "Help / Waiting on money / Charge came back",
     topic: "Payouts",
     updated: "March 2026",
     snippet:
-      "Refunds, disputes, and fees can pull the balance below zero. Payouts stay off until new charges bring it back.",
+      "A credit can post and then reverse if the bank dispute and the refund both try to return the same charge.",
     paragraphs: [
-      "We do not draft your bank account for a negative balance unless your agreement says so.",
-      "The Home banner shows the amount owed. New successful charges apply to it automatically."
+      "If you already opened a bank dispute on a charge and we also refunded that same charge, the bank may put the money back once.",
+      "An extra charge on the same order is a different payment. A refund of that extra line should still stand."
     ],
     steps: [
-      "Open Balance and read the activity that caused the debit.",
-      "Cover it with new charges, or add funds if that option is on your account.",
-      "Payouts resume on the next schedule after the balance is positive."
+      "Compare the dates and amounts on both lines.",
+      "See which charge the bank is still reviewing.",
+      "Submit a case if the extra charge came back after we refunded it."
     ],
     tags: ["payout", "balance", "negative", "reserve"]
   },
   {
     id: "payout-statement",
-    title: "Match a payout to the bank deposit",
-    path: "Support / Payouts / Statements",
+    title: "Find a refund on your statement",
+    path: "Help / Waiting on money / Statements",
     topic: "Payouts",
     updated: "February 2026",
     snippet:
-      "The deposit descriptor is Northline plus the payout id. The bank date can be one business day after the payout date in the dashboard.",
+      "The credit uses the original store name. The bank date can be a few days after the refund date in the email.",
     paragraphs: [
-      "One payout can include many charges, refunds, and fees. Download the payout report if the deposit total does not match a single charge.",
-      "A returned payout disappears from the bank statement and reappears in your balance."
+      "Search for the amount and the original store name. It will not look like a new deposit from Northline.",
+      "A returned credit disappears from the statement. We send it again once we have a working card."
     ],
     steps: [
-      "Copy the payout id from Payouts.",
-      "Find that id on the bank line.",
-      "Open the payout report for the charge-level breakdown."
+      "Copy the amount from the refund email.",
+      "Search your statement for that amount and the store name.",
+      "Allow 5 to 10 business days from the refund date."
     ],
     tags: ["payout", "statement", "deposit", "bank", "report"]
   },
   {
     id: "proof-of-address",
     title: "What counts as proof of address",
-    path: "Support / Account / Address",
+    path: "Help / Your account / Address",
     topic: "Verification",
     updated: "April 2026",
     snippet:
-      "Use a bank statement or utility bill dated within 90 days. The name and address must match the business, and the full page has to be visible.",
+      "Use a bank statement or utility bill dated within 90 days. The name and address must match, and the full page has to be visible.",
     paragraphs: [
       "Screenshots of a maps app, lease excerpts, and mail forwarding slips are rejected.",
-      "If the statement is for the owner’s home and the business is a company, use a document in the company’s name instead."
+      "The name on the document should match the name we asked you to confirm."
     ],
     steps: [
       "Download the PDF from the bank or utility. Do not photograph a screen.",
@@ -481,37 +481,37 @@ const ARTICLES = [
   },
   {
     id: "dba-name",
-    title: "The statement name does not match the legal name",
-    path: "Support / Account / Business name",
+    title: "The store name on my statement looks wrong",
+    path: "Help / Your account / Store name",
     topic: "Verification",
     updated: "June 2026",
     snippet:
-      "Customers can see a doing-business-as name. Verification still uses the legal name on the formation documents.",
+      "The name on your card can be a store name, not the company name. Search for the amount if the name looks unfamiliar.",
     paragraphs: [
-      "A mismatch between the legal name and the bank account is the usual reason a payout destination fails.",
-      "You can set a customer-facing name under Public details without changing the legal name."
+      "A refund uses the same name as the original charge. If you look for “Northline,” you may miss it.",
+      "If the name does not match any store you used, submit a case with the date and the amount."
     ],
     steps: [
-      "Open Account → Business and compare the legal name with the bank letter.",
-      "Update the legal name only if the formation documents changed.",
-      "Put the storefront name in Public details."
+      "Search your statement for the amount, not only the store name.",
+      "Compare it with the receipt or order email.",
+      "Submit a case if you still do not recognize the charge."
     ],
     tags: ["verification", "name", "dba", "business", "statement"]
   },
   {
     id: "verification-pending",
-    title: "Verification has been in review for days",
-    path: "Support / Account / In review",
+    title: "We’re still reviewing what you sent",
+    path: "Help / Your account / In review",
     topic: "Verification",
     updated: "May 2026",
     snippet:
       "Most reviews finish within two business days. A case does not speed up a review that is still inside that window.",
     paragraphs: [
       "Status stays In review while a person checks the files. Refreshing the page does not move it.",
-      "If it is still In review after two business days, open a case and include the requirement name, not a new copy of the file."
+      "If it is still In review after two business days, open a case and include what we asked for, not a new copy of the file."
     ],
     steps: [
-      "Check the timestamp under the slot.",
+      "Check the timestamp on the request.",
       "Wait through two business days before writing in.",
       "If you were rejected, follow the note instead of waiting."
     ],
@@ -519,91 +519,91 @@ const ARTICLES = [
   },
   {
     id: "refund-window",
-    title: "How long you can still refund a payment",
-    path: "Support / Payments / Refund window",
+    title: "How long we can still refund a charge",
+    path: "Help / Refunds / Refund window",
     topic: "Refunds",
     updated: "March 2026",
     snippet:
-      "Card payments can be refunded for 180 days. After that the Refund button is gone and the customer has to be paid another way.",
+      "Card payments can be refunded for 180 days. After that we cannot send the credit to the same charge.",
     paragraphs: [
-      "The window starts on the original charge date, not the date the service was delivered.",
+      "The window starts on the original charge date, not the day the order arrived.",
       "A partial refund does not restart the 180 days."
     ],
     steps: [
-      "Open the payment and look for Refund.",
-      "If the button is missing, the window has closed.",
-      "Do not create a new charge just to send the money back."
+      "Check the charge date on your statement or receipt.",
+      "If it is older than 180 days, say so in the case.",
+      "Do not open a bank dispute only because the refund window closed — tell us first if you can."
     ],
     tags: ["refund", "window", "180", "payment"]
   },
   {
     id: "refund-not-received",
-    title: "The customer cannot find the refund",
-    path: "Support / Payments / Missing refund",
+    title: "I cannot find the refund",
+    path: "Help / Refunds / Missing refund",
     topic: "Refunds",
     updated: "January 2026",
     snippet:
-      "A submitted refund can take 5 to 10 business days to show on the card. It uses the original statement descriptor, not a new one.",
+      "A submitted refund can take 5 to 10 business days to show on your card. It uses the original statement name, not a new one.",
     paragraphs: [
-      "Ask the customer to search the original descriptor and the refund amount, not your store name if those differ.",
-      "If the payment page still says Pending, the refund has not reached the network yet."
+      "Search your statement for the original store name and the refund amount. It will not look like a new deposit.",
+      "If we still show the refund as Pending, it has not reached your bank yet."
     ],
     steps: [
-      "Open the payment and read the refund status.",
-      "If it says Succeeded, give the customer the date, amount, and descriptor.",
-      "Open a case only if Succeeded is older than 10 business days."
+      "Check the email or receipt for the refund date and amount.",
+      "Search your statement for that amount and the original store name.",
+      "Submit a case only if the refund is older than 10 business days and still missing."
     ],
     tags: ["refund", "customer", "statement", "missing", "descriptor"]
   },
   {
     id: "refund-and-dispute",
-    title: "Refund a payment that already has a dispute",
-    path: "Support / Payments / Refund during a dispute",
+    title: "A refund when you already opened a bank dispute",
+    path: "Help / Refunds / Refund and a dispute",
     topic: "Refunds",
     updated: "June 2026",
     snippet:
-      "Refunding the extra charge does not answer a dispute on the other one. If a customer says they were charged twice, you still respond under Disputes and put the refund receipt in the packet.",
+      "A refund of the extra charge does not close a dispute you already opened with your bank on the other charge. Those are two different reviews.",
     paragraphs: [
-      "The bank does not see the refund unless you include it. Without that receipt they can still decide for the cardholder.",
-      "Refunding the full amount does not withdraw the dispute."
+      "Your bank is asking about one charge. A refund of a different charge does not answer that question.",
+      "You can still request the extra-charge refund. The bank dispute stays open until the bank finishes."
     ],
     steps: [
-      "Refund the payment from the payment page.",
-      "Download the receipt.",
-      "Upload it on the dispute before the deadline."
+      "Request a refund of only the extra charge.",
+      "Keep the refund confirmation.",
+      "Let the bank finish the dispute on the other charge."
     ],
-    tags: ["refund", "dispute", "evidence", "receipt"]
+    tags: ["refund", "dispute", "evidence", "receipt", "charged", "twice"]
   },
   {
     id: "staff-roles",
-    title: "Which roles can issue refunds and payouts",
-    path: "Support / Security / Roles",
+    title: "Who can change my account",
+    path: "Help / Sign-in / Access",
     topic: "Security",
     updated: "April 2026",
     snippet:
-      "Owners and admins can refund and change the bank account. Analysts can view payments and cannot move money.",
+      "Only you can request a refund or reset two-factor from this help center. We will not change the account from a different email.",
     paragraphs: [
-      "Invite people from Settings → Team. A role change applies the next time they load the dashboard.",
-      "Removing someone signs them out. It does not delete payments they already created."
+      "Write in from the email on the order. A different address needs a match to the receipt.",
+      "Signing out of every device does not delete your orders."
     ],
     steps: [
-      "Open Settings → Team.",
-      "Set the role before you send the invite.",
-      "Turn off a person who has left instead of sharing their login."
+      "Use the email on the receipt.",
+      "If someone else needs to write in, include the order id and the receipt.",
+      "Do not share your sign-in code."
     ],
     tags: ["security", "role", "admin", "team", "refund"]
   },
   {
     id: "suspicious-login",
     title: "You got a sign-in alert you do not recognize",
-    path: "Support / Security / Alerts",
+    path: "Help / Sign-in / Alerts",
     topic: "Security",
     updated: "February 2026",
     snippet:
       "The alert email names the browser and the city. If that was not you, sign out of every session and rotate the password.",
     paragraphs: [
       "A new city can be a VPN or a phone on a different network. Check the time before you reset everything.",
-      "If money moved, open a case with the payout id after you secure the login."
+      "If a charge you do not recognize posted, open a case with the date and amount after you secure the login."
     ],
     steps: [
       "From a device you trust, open Settings → Security → Sessions.",
@@ -615,33 +615,56 @@ const ARTICLES = [
   {
     id: "sign-out-everywhere",
     title: "Sign out of every device",
-    path: "Support / Security / Sessions",
+    path: "Help / Sign-in / Sessions",
     topic: "Security",
     updated: "May 2026",
     snippet:
       "Sign out of all sessions from Settings → Security. You stay signed in on the browser you used to click it.",
     paragraphs: [
       "This does not turn off two-factor or change the password.",
-      "Staff sessions end too if you are an owner. They will need to sign in again."
+      "Other devices signed in with your email will need to sign in again."
     ],
     steps: [
       "Open Settings → Security → Sessions.",
       "Choose Sign out of all other sessions.",
-      "Ask anyone who shares the account to confirm they can still get in with their own login."
+      "Confirm you can still get in on this browser before you close it."
     ],
     tags: ["security", "session", "sign out", "device"]
   }
 ];
 
 const SUGGESTIONS = [
-  { q: "a customer says I charged them twice", hint: "Order 1044" },
-  { q: "payout on hold", hint: "Friday’s payout" },
-  { q: "dispute reason code", hint: "Disputes" },
-  { q: "refund a payment", hint: "Payments" },
-  { q: "upload documents", hint: "Verification" }
+  { q: "I was charged twice", hint: "Order 1044" },
+  { q: "refund not showing", hint: "5 to 10 days" },
+  { q: "I opened a bank dispute", hint: "Bank disputes" },
+  { q: "refund a payment", hint: "Refunds" },
+  { q: "I lost my phone", hint: "Sign-in" }
 ];
 
 const TOPICS = ["All", "Disputes", "Payouts", "Verification", "Refunds", "Security"];
+
+const TOPIC_LABELS = {
+  All: "All",
+  Disputes: "Bank disputes",
+  Payouts: "Waiting on money",
+  Verification: "Your account",
+  Refunds: "Refunds",
+  Security: "Sign-in"
+};
+
+function topicLabel(topic) {
+  return TOPIC_LABELS[topic] || topic;
+}
+
+function topicKeyFromLabel(name) {
+  if (!name) return "";
+  const exact = Object.entries(TOPIC_LABELS).find(([, label]) => label === name);
+  if (exact && exact[0] !== "All") return exact[0];
+  const starts = Object.entries(TOPIC_LABELS).find(([, label]) => name.startsWith(label));
+  if (starts && starts[0] !== "All") return starts[0];
+  if (["Disputes", "Payouts", "Verification", "Refunds", "Security"].includes(name)) return name;
+  return "";
+}
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (ch) => (
@@ -684,33 +707,33 @@ function searchArticles(query, topic) {
 
 const TOPIC_SUMMARIES = {
   Disputes:
-    "Most disputes are decided on the packet you send before the dashboard deadline. Include <mark>proof of delivery, customer messages, and any refund receipt</mark> that matches the reason code.",
+    "A bank dispute is your bank asking about <mark>one charge</mark>. That review stays on that charge even if another payment is refunded.",
   Payouts:
-    "Payout holds are usually caused by <mark>incomplete verification, a dispute spike, or unusual volume</mark>. A returned payout means the bank rejected the account on file — fix that destination before you retry.",
+    "A refund or credit can take <mark>5 to 10 business days</mark> to show. Search your statement for the original store name and the amount.",
   Verification:
-    "Verification finishes faster when the <mark>legal name, owner id, and proof of address</mark> all match. Upload files in Account → Verification — a file on a support case is not added to the review.",
+    "We may ask you to confirm the <mark>email and name on the order</mark>. A file sent only in a case is not always enough — follow the link in the request.",
   Refunds:
-    "Refunds start on the payment itself and usually show on the card in <mark>5 to 10 business days</mark>. A refund does not close an open dispute on that same charge.",
+    "Refunds usually show on your card in <mark>5 to 10 business days</mark>. A refund does not close a dispute you already opened with your bank.",
   Security:
-    "Owners need an authenticator app. If that device is gone, a reset needs <mark>a previously trusted browser or a manual review</mark>. Recovery codes each work once."
+    "If you lost the phone you use to sign in, a reset needs <mark>a recovery code or a previously trusted browser</mark>."
 };
 
 function summaryFor(query, topic, results) {
   const active = topic && topic !== "All" ? topic : "";
   const q = query.toLowerCase();
   if (!results.length) {
-    const scope = active ? ` in ${active}` : "";
+    const scope = active ? ` in ${topicLabel(active)}` : "";
     return `Nothing${scope} matches that wording. Try a shorter phrase, or pick another topic. You can also submit a case and a specialist will pick it up.`;
   }
   if (active && TOPIC_SUMMARIES[active]) {
-    const count = `${results.length} ${escapeHtml(active)} article${results.length === 1 ? "" : "s"}`;
+    const count = `${results.length} ${escapeHtml(topicLabel(active))} article${results.length === 1 ? "" : "s"}`;
     if (query.trim()) {
       return `${TOPIC_SUMMARIES[active]} These <mark>${count}</mark> match “${escapeHtml(query.trim())}”.`;
     }
     return `${TOPIC_SUMMARIES[active]} Showing <mark>${count}</mark>.`;
   }
   if (/twice|charged twice|duplicate/.test(q)) {
-    return "This is two records. <mark>py_1044</mark> is the extra $86. <mark>dp_3k19</mark> is already open on the other charge, and the reason says the order never arrived. Refund only the extra one, then answer the dispute in the dashboard. Friday’s payout stays held until you do.";
+    return "From these articles: two lines are two payments only if <mark>both posted</mark> for the same order and amount. A pending or failed retry is not money you paid. A refund of the extra charge takes <mark>5 to 10 business days</mark> and does <mark>not close</mark> a bank dispute on the other charge.";
   }
   if (/hold|payout|reserve/.test(q)) return TOPIC_SUMMARIES.Payouts;
   if (/verif|document|upload|identity|kyc/.test(q)) return TOPIC_SUMMARIES.Verification;
@@ -730,7 +753,89 @@ function searchUrl(query, topic) {
 }
 
 function goToSearch(query, topic) {
+  if (query && query.trim()) sessionStorage.setItem("nl-last-q", query.trim());
   window.location.href = searchUrl(query, topic);
+}
+
+function lastSearchQuery() {
+  const params = new URLSearchParams(window.location.search).get("q");
+  if (params && params.trim()) return params.trim();
+  return sessionStorage.getItem("nl-last-q") || "";
+}
+
+function articleContentParts(article) {
+  if (article.id === "duplicate-charge") {
+    return [
+      plain("Two lines are two payments only if "),
+      marked("both posted"),
+      plain(" for the same order and amount. A pending authorization or a failed retry is not a second charge. Refunding the extra line takes "),
+      marked("5 to 10 business days"),
+      plain(" and does not close a dispute your bank already opened.")
+    ];
+  }
+  if (article.id === "refund-and-dispute") {
+    return [
+      plain("A refund of the extra charge and a bank dispute are "),
+      marked("two different reviews"),
+      plain(". The extra $86 can come back while the bank still finishes the charge you already disputed.")
+    ];
+  }
+  if (article.id === "refund-not-received") {
+    return [
+      plain("A submitted refund uses the "),
+      marked("original store name"),
+      plain(" and usually shows in "),
+      marked("5 to 10 business days"),
+      plain(". It will not look like a new deposit from Northline.")
+    ];
+  }
+  if (article.id === "respond-dispute" || article.id === "inquiry-vs-dispute") {
+    return [
+      plain("Your bank is asking about "),
+      marked("one charge"),
+      plain(". That review stays on that charge even if another payment for the same order is refunded.")
+    ];
+  }
+  const lead = article.paragraphs[0] || article.snippet;
+  return [plain(lead)];
+}
+
+function resultsContentParts(query, results) {
+  const q = (query || "").toLowerCase();
+  if (!results.length) {
+    return [plain("Nothing on this list matches that wording. Try a shorter phrase, or "), marked("submit a case"), plain(".")];
+  }
+  if (/twice|duplicate|charged/.test(q)) {
+    return [
+      plain("From these articles: two lines are two payments only if "),
+      marked("both posted"),
+      plain(" for the same order and amount. A pending or failed retry is not money you paid. A refund of the extra charge takes "),
+      marked("5 to 10 business days"),
+      plain(" and does "),
+      marked("not close"),
+      plain(" a bank dispute on the other charge.")
+    ];
+  }
+  if (/refund|missing|not showing|isn.t here/.test(q)) {
+    return [
+      plain("From these articles: a refund uses the "),
+      marked("original store name"),
+      plain(" and usually posts in "),
+      marked("5 to 10 business days"),
+      plain(". It will not look like a new deposit. A bank dispute on a different charge stays open.")
+    ];
+  }
+  if (/dispute|bank|chargeback|inquiry/.test(q)) {
+    return [
+      plain("From these articles: a bank dispute is your bank asking about "),
+      marked("one charge"),
+      plain(". That review stays on that charge even if another payment is refunded. The date on the letter is the one that counts.")
+    ];
+  }
+  if (results.length === 1) return articleContentParts(results[0]);
+  const first = results[0].paragraphs[0] || results[0].snippet;
+  const second = results[1].paragraphs[0] || results[1].snippet;
+  return [plain("From what’s on this list: "), plain(first), plain(" "), plain(second)];
 }
 
 function initSearchForms() {
@@ -820,12 +925,12 @@ function renderResults(query, topic) {
     title.textContent = query ? `Results for “${query}”` : "Browse help articles";
   }
   if (meta) {
-    const topicNote = topic && topic !== "All" ? ` in ${topic}` : "";
+    const topicNote = topic && topic !== "All" ? ` in ${topicLabel(topic)}` : "";
     meta.textContent = `${results.length} article${results.length === 1 ? "" : "s"}${topicNote} for ${shownQuery}`;
   }
   if (aiText) aiText.innerHTML = summaryFor(query, topic, results);
   if (aiMeta) {
-    const scope = topic && topic !== "All" ? `${topic} ` : "";
+    const scope = topic && topic !== "All" ? `${topicLabel(topic)} ` : "";
     aiMeta.textContent = results.length
       ? `Based on ${results.length} ${scope}article${results.length === 1 ? "" : "s"} · Updated 2026`
       : "No matching articles";
@@ -837,7 +942,7 @@ function renderResults(query, topic) {
   if (filters) {
     filters.innerHTML = TOPICS.map((name) => {
       const pressed = (topic || "All") === name;
-      return `<button type="button" class="chip-subtle" aria-pressed="${pressed}" data-topic-filter="${escapeHtml(name)}">${escapeHtml(name)}</button>`;
+      return `<button type="button" class="chip-subtle" aria-pressed="${pressed}" data-topic-filter="${escapeHtml(name)}">${escapeHtml(topicLabel(name))}</button>`;
     }).join("");
     filters.querySelectorAll("[data-topic-filter]").forEach((button) => {
       button.addEventListener("click", () => {
@@ -854,7 +959,7 @@ function renderResults(query, topic) {
     list.innerHTML = `
       <div class="empty">
         <h2>No articles for that search</h2>
-        <p>Try “dispute”, “payout”, or “verification”, or send the details to support.</p>
+        <p>Try “charged twice”, “refund”, or “bank dispute”, or send the details to support.</p>
         <a class="btn-primary" href="submit.html">Submit a case</a>
       </div>`;
     return;
@@ -952,7 +1057,7 @@ function initSearchPage() {
 function initHome() {
   const list = document.getElementById("popular-list");
   if (!list) return;
-  const popular = ["duplicate-charge", "refund-and-dispute", "payout-hold", "inquiry-vs-dispute"];
+  const popular = ["duplicate-charge", "refund-and-dispute", "refund-not-received", "inquiry-vs-dispute"];
   list.innerHTML = popular
     .map((id) => ARTICLES.find((article) => article.id === id))
     .filter(Boolean)
@@ -968,16 +1073,16 @@ function initHome() {
 }
 
 const TOPIC_CITES = {
-  Disputes: ["respond-dispute", "evidence-deadline"],
-  Payouts: ["payout-hold", "failed-payout"],
+  Disputes: ["respond-dispute", "inquiry-vs-dispute"],
+  Payouts: ["refund-not-received", "payout-hold"],
   Verification: ["verify-account", "upload-documents"],
   Refunds: ["issue-refund", "refund-and-dispute"],
   Security: ["lost-device", "recovery-codes"]
 };
 
 const ACTION_CITES = {
-  review: ["payout-hold", "payout-schedule"],
-  remind: ["respond-dispute", "evidence-deadline"],
+  review: ["refund-not-received", "payout-statement"],
+  remind: ["respond-dispute", "inquiry-vs-dispute"],
   refund: ["duplicate-charge", "refund-and-dispute"],
   reset: ["lost-device", "recovery-codes"]
 };
@@ -1109,39 +1214,39 @@ function topicLead(topic) {
   switch (topic) {
     case "Disputes":
       return [
-        plain("Disputes are decided on the packet you send before the dashboard deadline. Include "),
-        marked("proof of delivery, customer messages, and any refund receipt"),
-        plain(" that matches the reason code.")
+        plain("A bank dispute is your bank asking about "),
+        marked("one charge"),
+        plain(". That review stays on that charge even if another payment is refunded.")
       ];
     case "Payouts":
       return [
-        plain("Payout holds usually come from "),
-        marked("incomplete verification, a dispute spike, or unusual volume"),
-        plain(". Say whether the money failed, was returned, or is still sitting on hold.")
+        plain("A refund or credit can take "),
+        marked("5 to 10 business days"),
+        plain(". Search your statement for the original store name and the amount.")
       ];
     case "Verification":
       return [
-        plain("Verification finishes faster when the "),
-        marked("legal name, owner id, and proof of address"),
-        plain(" all match. Upload files in Account → Verification — this case alone does not attach them.")
+        plain("We may ask you to confirm the "),
+        marked("email and name on the order"),
+        plain(". Follow the link in the request if we asked for a document.")
       ];
     case "Refunds":
       return [
-        plain("Refunds start on the payment itself and usually show on the card in "),
+        plain("Refunds usually show on your card in "),
         marked("5 to 10 business days"),
-        plain(". A refund does not close an open dispute on that same charge.")
+        plain(". A refund does not close a dispute you already opened with your bank.")
       ];
     case "Security":
       return [
-        plain("Owners need an authenticator app. If that device is gone, a reset needs "),
-        marked("a previously trusted browser or a manual review"),
+        plain("If you lost the phone you use to sign in, a reset needs "),
+        marked("a recovery code or a previously trusted browser"),
         plain(".")
       ];
     default:
       return [
-        plain("Describe what you expected and what happened instead. A "),
-        marked("payment, payout, or dispute id"),
-        plain(" is the fastest way to find the record.")
+        plain("Describe what you expected and what happened instead. An "),
+        marked("order or payment id"),
+        plain(" is the fastest way to find the charge.")
       ];
   }
 }
@@ -1149,17 +1254,17 @@ function topicLead(topic) {
 function keyAsk(topic) {
   switch (topic) {
     case "Disputes":
-      return [plain("What decides it is "), marked("proof of delivery, customer messages, and any refund receipt"), plain(".")];
+      return [plain("Say which charge your bank is asking about — "), marked("the date and the amount"), plain(".")];
     case "Payouts":
-      return [plain("Say whether this is "), marked("a hold or a returned payout"), plain(", and the date it stopped.")];
+      return [plain("Say the "), marked("amount and the date"), plain(" you expected the credit, and what your statement shows now.")];
     case "Verification":
-      return [plain("The files that matter are the "), marked("owner id and a proof of address under 90 days"), plain(".")];
+      return [plain("Say what we asked you to confirm — "), marked("the email, the name, or a document"), plain(".")];
     case "Refunds":
-      return [plain("Include the "), marked("payment id and whether a dispute is also open"), plain(".")];
+      return [plain("Include the "), marked("order or payment id"), plain(" and whether you also opened a bank dispute.")];
     case "Security":
       return [plain("Say if you still have "), marked("the recovery codes or a trusted browser"), plain(".")];
     default:
-      return [plain("Add the "), marked("topic and an id"), plain(" if you have one.")];
+      return [plain("Add the "), marked("topic and an order id"), plain(" if you have one.")];
   }
 }
 
@@ -1167,16 +1272,16 @@ function landingParts(topic) {
   if (topic) return topicLead(topic);
   return [
     plain("Most cases move faster when you name "),
-    marked("the topic, what you expected, and what you already tried"),
-    plain(". A "),
-    marked("payment or dispute id"),
-    plain(" lets support open the right record without another email.")
+    marked("what you expected, what you saw, and what you already tried"),
+    plain(". An "),
+    marked("order or payment id"),
+    plain(" lets us find the charge without another email.")
   ];
 }
 
 function extras(draft, parts) {
   if (draft.priority === "Urgent") {
-    parts.push(plain(" You marked it "), marked("urgent"), plain(", so name the payout that cannot go out and since when."));
+    parts.push(plain(" You marked it "), marked("urgent"), plain(", so name the charge and the date it posted."));
   }
   if (draft.reference.trim()) {
     parts.push(plain(" I’ll attach "), marked(draft.reference.trim()), plain(" to the case."));
@@ -1192,7 +1297,7 @@ function scriptForDraft(draft) {
     parts = [plain("You wrote: “"), marked(clipText(details, 110)), plain("”. ")];
     const gate = actionGate(draft);
     if (gate) {
-      parts.push(plain("An automation already covers part of this: "), marked(gate.name), plain(". "));
+      parts.push(plain("You can do this yourself from here: "), marked(gate.name), plain(". "));
     }
     parts.push(...keyAsk(draft.topic));
   } else if (subject) {
@@ -1208,8 +1313,9 @@ function scriptForDraft(draft) {
 const CASE_HANDOFF_KEY = "nl-case-handoff";
 
 function paymentIdFrom(draft) {
-  const found = `${draft.details} ${draft.subject} ${draft.reference}`.match(/py_[a-z0-9]+/i);
-  return found ? found[0] : "";
+  const blob = `${draft.details} ${draft.subject} ${draft.reference}`;
+  const found = blob.match(/py_[a-z0-9]+/i) || blob.match(/\b\d{3,}\b/);
+  return found ? found[0] : draft.reference.trim();
 }
 
 function saveCaseHandoff(draft, gate) {
@@ -1234,7 +1340,7 @@ function readCaseHandoff() {
 function actionGate(draft) {
   const text = `${draft.subject} ${draft.details}`.toLowerCase();
   if (/refund|extra charge|charged twice|duplicate/.test(text)) {
-    return { id: "refund-action", name: "Refund a payment", label: "Run the refund action", href: "action.html" };
+    return { id: "refund-action", name: "Request a refund", label: "Request the refund", href: "action.html" };
   }
   return null;
 }
@@ -1247,61 +1353,61 @@ function questionPool(draft) {
       id: "which-topic",
       label: "Which topic should I pick?",
       parts: () => [
-        plain("Pick the area the block sits in. "),
-        marked("Disputes"),
-        plain(" if a cardholder challenged a charge, "),
-        marked("Payouts"),
-        plain(" if funds won’t leave, "),
-        marked("Verification"),
-        plain(" if a document was rejected.")
+        plain("Pick the area that matches what happened. "),
+        marked("Bank disputes"),
+        plain(" if you asked your bank to review a charge, "),
+        marked("Waiting on money"),
+        plain(" if a refund has not shown up, "),
+        marked("Refunds"),
+        plain(" if you want a charge sent back.")
       ]
     });
   }
   if (draft.topic === "Disputes") {
     pool.push({
       id: "evidence",
-      label: "What evidence do I need?",
+      label: "What should I send my bank?",
       parts: () => [
-        plain(`For a dispute${subjectBit}, you usually have `),
-        marked("7 to 21 days"),
-        plain(", and the date in the dashboard is the one that counts. Attach "),
-        marked("proof of delivery, the customer thread, and a refund receipt"),
-        plain(" if you already returned the funds.")
+        plain(`For a bank dispute${subjectBit}, the date on the `),
+        marked("letter or app notice"),
+        plain(" is the one that counts. Keep the receipt and say which charge — "),
+        marked("the date and the amount"),
+        plain(" — the bank is asking about.")
       ]
     });
   }
   if (draft.topic === "Payouts") {
     pool.push({
       id: "hold-or-return",
-      label: "Is this a hold or a returned payout?",
+      label: "When should I see the money?",
       parts: () => [
-        plain("A hold means the balance is still here and a review is open. A return means the bank sent it back — the row is marked "),
-        marked("Returned"),
-        plain(", and you retry after the account is fixed. Say which one you see, and since when.")
+        plain("A refund or credit usually shows in "),
+        marked("5 to 10 business days"),
+        plain(". Search your statement for the original store name and the amount, not a new deposit.")
       ]
     });
   }
   if (draft.topic === "Verification") {
     pool.push({
       id: "where-upload",
-      label: "Where do I upload this?",
+      label: "Where do I send the document?",
       parts: () => [
-        plain("Upload in "),
-        marked("Account → Verification"),
-        plain(", in the slot named on the requirement. A file attached only to this case is not added to that review. Use a "),
+        plain("Use the "),
+        marked("link in the request"),
+        plain(" we sent. A file attached only to this case is not always added to that review. Use a "),
         marked("PDF, JPG, or PNG"),
-        plain(", and keep proof of address inside 90 days.")
+        plain(".")
       ]
     });
   }
   if (draft.topic === "Refunds") {
     pool.push({
       id: "refund-dispute",
-      label: "Does a refund close a dispute?",
+      label: "Does a refund close my bank dispute?",
       parts: () => [
-        plain("No. Refund the payment, and also respond under Disputes. Put the "),
-        marked("refund receipt in the evidence packet"),
-        plain(", or the bank can still decide for the cardholder.")
+        plain("No. You can still request the extra-charge refund. The bank dispute "),
+        marked("stays open"),
+        plain(" until your bank finishes that review.")
       ]
     });
   }
@@ -1310,9 +1416,9 @@ function questionPool(draft) {
       id: "lost-device",
       label: "What if I lost my authenticator?",
       parts: () => [
-        plain("An owner can approve a reset from a "),
+        plain("A reset works from a "),
         marked("previously trusted browser"),
-        plain(". Otherwise support resets it after the business is verified. Mention whether you still have the recovery codes.")
+        plain(". Otherwise we reset it after we confirm the account is yours. Mention whether you still have the recovery codes.")
       ]
     });
   }
@@ -1330,13 +1436,11 @@ function questionPool(draft) {
   if (!draft.reference.trim()) {
     pool.push({
       id: "need-id",
-      label: "Do I need a payment or dispute id?",
+      label: "Do I need an order or payment id?",
       parts: () => [
-        plain("If you have it, yes. Dispute ids start with "),
-        marked("dp_"),
-        plain(" and payment ids with "),
-        marked("py_"),
-        plain(". Without one, include the amount and the date so support can search.")
+        plain("If you have it, yes. An order number or payment id is enough. Without one, include the "),
+        marked("amount and the date"),
+        plain(" so we can find the charge.")
       ]
     });
   }
@@ -1389,7 +1493,7 @@ function submittedParts(info) {
     plain(` about “${clipText(info.subject, 80)}”.`)
   ];
   if (info.priority === "Urgent") {
-    parts.push(plain(" It’s in the "), marked("urgent queue"), plain(" because a payout is blocked."));
+    parts.push(plain(" It’s in the "), marked("urgent queue"), plain(" because a refund or a bank deadline is time-sensitive."));
   }
   if (info.reference.trim()) {
     parts.push(plain(" Support already has "), marked(info.reference.trim()), plain("."));
@@ -1438,47 +1542,65 @@ function initCaseAssist(form) {
     return parts.map((part) => `${part.mark ? "*" : ""}${part.t}`).join("");
   }
 
-  function play(parts, options) {
+  function caseOffers(draft) {
+    const gate = actionGate(draft);
+    const text = `${draft.subject} ${draft.details}`.toLowerCase();
+    const two = Boolean(gate && /dispute|dp_/.test(text));
+    const list = [];
+    if (gate) {
+      list.push({
+        ...gate,
+        kind: "action",
+        onLeave() { saveCaseHandoff(draft, gate); }
+      });
+    }
+    if (two) {
+      list.push({
+        id: "evidence",
+        kind: "question",
+        label: "Does a refund close my bank dispute?",
+        parts: () => [
+          plain("No. The extra-charge refund and the bank dispute are "),
+          marked("two different reviews"),
+          plain(". The bank still finishes the one you opened.")
+        ],
+        onOpen() { asked.add("evidence"); }
+      });
+    } else if (!gate) {
+      const next = questionPool(draft).find((item) => !asked.has(item.id));
+      if (next) list.push({ ...next, kind: "question", onOpen() { asked.add(next.id); } });
+    }
+    return list.slice(0, 2);
+  }
+
+  function caseParts(draft) {
+    const gate = actionGate(draft);
+    const text = `${draft.subject} ${draft.details}`.toLowerCase();
+    if (gate && /dispute|dp_/.test(text)) {
+      return [plain("You can request a refund of the extra charge. That does "), marked("not close"), plain(" the dispute you opened with your bank.")];
+    }
+    if (gate) return [plain("You can do this yourself from here: "), marked(gate.name), plain(".")];
+    if (draft.details.trim().length > 8) return [plain("You wrote: “"), marked(clipText(draft.details, 90)), plain("”.")];
+    if (draft.topic) return [plain("This case is about "), marked(topicLabel(draft.topic)), plain(".")];
+    if (draft.subject.trim()) return [plain("Subject so far: “"), marked(clipText(draft.subject, 80)), plain("”.")];
+    return [plain("Name the topic and what happened, in your words.")];
+  }
+
+  function play(parts, options = {}) {
     lastSig = signature(parts);
     questionVisible = false;
-    summary.play(parts, options);
-    revealGate();
-  }
-
-  function revealGate() {
-    const tick = () => {
-      if (locked) return;
-      if (summary.isGenerating()) {
-        window.setTimeout(tick, 300);
-        return;
-      }
-      const gate = actionGate(readDraft());
-      if (gate) summary.showQuestion({ ...gate, onLeave() { saveCaseHandoff(readDraft(), gate); } });
-    };
-    window.setTimeout(tick, 200);
-  }
-
-  function maybeShowQuestion() {
-    if (locked || !userEdited || questionVisible || !typedSinceAnswer) return;
-    if (summary.isGenerating()) {
-      pauseTimer = window.setTimeout(maybeShowQuestion, 350);
-      return;
-    }
-    const draft = readDraft();
-    const next = questionPool(draft).find((item) => !asked.has(item.id));
-    if (!next) return;
-    questionVisible = true;
-    summary.showQuestion({
-      id: next.id,
-      label: next.label,
-      parts: next.parts,
-      onOpen() {
-        asked.add(next.id);
-        typedSinceAnswer = false;
-        questionVisible = false;
-        window.clearTimeout(pauseTimer);
-      }
+    summary.reply({
+      parts,
+      ask: options.ask || "follow-up",
+      offers: options.offers,
+      meta: options.meta,
+      phase: options.phase
     });
+  }
+
+  function showDraft(meta) {
+    const draft = readDraft();
+    play(caseParts(draft), { meta, offers: caseOffers(draft) });
   }
 
   function scheduleRewrite(delay) {
@@ -1488,11 +1610,11 @@ function initCaseAssist(form) {
       const draft = readDraft();
       const key = draftKey(draft);
       if (key === lastKey) return;
-      const parts = scriptForDraft(draft);
+      const parts = caseParts(draft);
       const sig = signature(parts);
       lastKey = key;
       if (sig === lastSig) return;
-      play(parts, { meta: "Updated from what you entered", phase: "drafting" });
+      play(parts, { meta: "Updated from what you entered", offers: caseOffers(draft) });
     }, delay);
   }
 
@@ -1500,11 +1622,7 @@ function initCaseAssist(form) {
     if (locked) return;
     userEdited = true;
     typedSinceAnswer = true;
-    questionVisible = false;
-    summary.hideQuestion();
     scheduleRewrite(700);
-    window.clearTimeout(pauseTimer);
-    pauseTimer = window.setTimeout(maybeShowQuestion, 1500);
   }
 
   ["subject", "details", "reference"].forEach((name) => {
@@ -1520,16 +1638,25 @@ function initCaseAssist(form) {
     questionVisible = false;
     return answerFreeform(value, readDraft());
   });
+  summary.setNextOffer(() => {
+    const next = questionPool(readDraft()).find((item) => !asked.has(item.id));
+    if (!next) return null;
+    return { ...next, kind: "question", onOpen() { asked.add(next.id); } };
+  });
 
   const opening = readDraft();
   lastKey = draftKey(opening);
-  const openingParts = opening.subject.trim() || opening.topic ? scriptForDraft(opening) : landingParts("");
-  play(openingParts, { meta: "Based on this form · just now", phase: "landed" });
+  showDraft("Based on this form · just now");
 
   return {
     invalid(issues) {
       if (locked) return;
-      play(missingParts(issues), { meta: "Checked the form", phase: "drafting", think: 200 });
+      summary.reply({
+        parts: missingParts(issues),
+        ask: "follow-up",
+        meta: "Checked the form",
+        phase: "drafting"
+      });
     },
     submitted(info) {
       locked = true;
@@ -1537,8 +1664,13 @@ function initCaseAssist(form) {
       window.clearTimeout(pauseTimer);
       window.clearTimeout(rewriteTimer);
       questionVisible = false;
-      summary.hideQuestion();
-      play(submittedParts(info), { meta: `Case ${info.caseId}`, phase: "submitted", label: "Case received", think: 280 });
+      summary.reply({
+        parts: submittedParts(info),
+        ask: "hidden",
+        offers: [],
+        meta: `Case ${info.caseId}`,
+        phase: "submitted"
+      });
     }
   };
 }
@@ -1629,7 +1761,7 @@ const SUMMARY_STORAGE = "nl-smart-summary";
 const SUMMARY_FEATURES = [
   { id: "label", name: "Label", detail: "Sparkle and the title." },
   { id: "body", name: "Summary", detail: "The drafted sentence and blue highlights." },
-  { id: "generating", name: "Generating", detail: "Shimmer, scan line, and the word-by-word draft." },
+  { id: "generating", name: "Generating", detail: "A short shimmer, then the summary appears." },
   { id: "meta", name: "Meta line", detail: "The reason under the summary." },
   { id: "helpful", name: "Helpful", detail: "Thumbs on the meta row." },
   { id: "ask", name: "Ask", detail: "The question field." },
@@ -1648,7 +1780,6 @@ const SCREEN_BLUEPRINT = {
     name: "Home",
     placement: "float",
     quiet: true,
-    quietLabel: "Ask a question",
     label: "AI Helper",
     askPlaceholder: "Ask a question…",
     note: "Floats centered along the bottom, and wider than the other cards. It starts as an ask field, with no summary until you ask or the page changes."
@@ -1725,9 +1856,11 @@ function applySummaryChrome(card) {
   card.dataset.off = SUMMARY_FEATURES.filter((feature) => !featureOn(feature.id)).map((feature) => feature.id).join(" ");
   const quiet = Boolean(spec.quiet) && card.dataset.spoke !== "1";
   card.classList.toggle("is-quiet", quiet);
-  card.setAttribute("aria-label", quiet ? spec.quietLabel || "Ask a question" : "AI Helper");
+  card.dataset.summary = quiet ? "off" : card.dataset.summary || "on";
+  card.dataset.ask = quiet ? "ask" : card.dataset.ask || "follow-up";
+  card.setAttribute("aria-label", "AI Helper");
   const label = card.querySelector("[data-summary-label]");
-  if (label && card.dataset.spoke !== "1") label.textContent = quiet ? spec.quietLabel || "Ask a question" : spec.label;
+  if (label) label.textContent = "AI Helper";
   const input = card.querySelector("[data-summary-ask] input");
   if (input) {
     input.placeholder = spec.askPlaceholder;
@@ -1738,6 +1871,8 @@ function applySummaryChrome(card) {
 function openSummary(card) {
   card.dataset.spoke = "1";
   card.classList.remove("is-quiet");
+  card.dataset.summary = "on";
+  if (card.dataset.ask !== "hidden") card.dataset.ask = "follow-up";
   card.setAttribute("aria-label", "AI Helper");
 }
 
@@ -1789,216 +1924,247 @@ function mountBlueprint(row) {
   row.appendChild(opener);
 }
 
-const JOURNEY_KEY = "nl-journey";
+const TEST_PLAN_KEY = "nl-test-plan";
+const PLAN_RESULT_KEY = "nl-plan1-results";
+const PLAN_MATRIX_TAB_KEY = "nl-plan1-matrix-tab";
 
-const JOURNEY_BEATS = [
+const PLAN_MATRIX_COLS = [
+  { id: "summary", label: "Summary" },
+  { id: "ask", label: "Ask a question" },
+  { id: "suggest", label: "Question suggesting" }
+];
+
+const PLAN_MATRIX = [
   {
-    screen: "home",
+    context: "Home",
     href: "index.html",
-    name: "Home",
-    scene: "Lena has Jonah’s email in one window and a payout that will not leave on Friday. She came here to talk to someone. The page does not ask her to pick a topic. It asks for the sentence she already has, in his words: a customer says she charged him twice."
+    summary: "",
+    ask: "They go straight to Ask AI with what happened — two charges, a missing credit.",
+    suggest: "The questions people ask most: charged twice, refund isn’t here, I opened a bank dispute."
   },
   {
-    screen: "search",
-    href: "search.html?q=charged+twice",
-    name: "Search result",
-    scene: "She searches that sentence. Two records come back, not one problem. py_1044 is the extra $86. dp_3k19 is a dispute already open on the other charge, py_1043, and the reason says order 1044 never arrived. Jonah says he received it. The citations are the two articles that split those facts apart."
-  },
-  {
-    screen: "article",
+    context: "Knowledge article",
     href: "article.html?id=duplicate-charge",
-    name: "Knowledge article",
-    scene: "She opens the article for this situation. It explains how to tell an extra successful charge from a retry, and that an open dispute is a different record. A refund does not close that dispute, and it does not release a payout. When she reads on, the guide follows her and asks the article’s next question: does a refund close the dispute."
+    summary: "A synthesis of this article from their keywords — the facts on the page, not a pointer to the title.",
+    ask: "The follow-up they still have after reading: does a refund cancel the bank dispute?",
+    suggest: "The questions this article usually raises, offered as chips under the summary."
   },
   {
-    screen: "submit",
-    href: "submit.html",
-    name: "Submit a case",
-    scene: "She opens a case with what she knows. The helper reads it and sees the extra charge is already a refund action. Under the answer, the same kind of chip she gets for a follow-up question is the way into that action. The case can stay for the reason code."
+    context: "Search",
+    href: "search.html?q=charged+twice",
+    summary: "A synthesis of the results on screen from their keywords — what the articles say, not which title to open.",
+    ask: "A freeform refine of “charged twice” if the list is still mixed.",
+    suggest: "Narrow the search: Refunds, or Bank disputes."
   },
   {
-    screen: "action",
+    context: "Action",
     href: "action.html",
-    name: "Action",
-    scene: "She takes that way out. The refund is filled in for her: lena@northline.test, payment py_1044, and a note that she compared it with py_1043. Running it sends the extra $86 back to Jonah. It leaves dp_3k19 open. Friday’s payout does not move."
+    summary: "Guidance for the refund they are about to send — extra $86 on order 1044.",
+    ask: "A clarification: does this also close the bank dispute they already opened?",
+    suggest: "The next step or a troubleshooting chip, before they confirm."
+  },
+  {
+    context: "Submit a case",
+    href: "submit.html",
+    summary: "Help preparing the case from what they already wrote.",
+    ask: "Questions while they describe what happened, if the case is still the right move.",
+    suggest: "A self-serve way out if one exists: request the refund instead of opening a case."
   }
 ];
 
-const JOURNEY_END = {
-  name: "What she still needs a person for",
-  copy: "By the time a person reads this case, the extra charge is refunded and the dispute is named. The remaining job is to move dp_3k19 off “product not received” before today’s deadline, so Lena can upload the carrier scan against the reason the bank will actually read."
-};
-
-function mountJourney(row) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "blueprint-entry journey-entry";
-  button.textContent = "Journey";
-  button.setAttribute("aria-expanded", "false");
-  button.setAttribute("aria-controls", "journey");
-  button.addEventListener("click", () => {
-    const panel = document.getElementById("journey");
-    if (!panel) return;
-    setJourneyOpen(panel, button, panel.hidden);
-  });
-  row.appendChild(button);
-}
-
-function setJourneyOpen(panel, button, open) {
-  panel.hidden = !open;
-  button.setAttribute("aria-expanded", open ? "true" : "false");
-  button.setAttribute("aria-pressed", open ? "true" : "false");
-  if (open) {
-    sessionStorage.setItem(JOURNEY_KEY, "1");
-    const testPanel = document.getElementById("test-plan");
-    const testButton = document.querySelector(".test-entry");
-    if (testPanel && testButton) setTestPlanOpen(testPanel, testButton, false, true);
-  } else sessionStorage.removeItem(JOURNEY_KEY);
-  window.dispatchEvent(new Event("resize"));
-}
-
-function mountJourneyPanel() {
-  const page = document.body.dataset.page || "home";
-  const panel = document.createElement("aside");
-  panel.className = "journey";
-  panel.id = "journey";
-  panel.hidden = true;
-  panel.setAttribute("aria-label", "User journey");
-
-  const head = document.createElement("div");
-  head.className = "journey__head";
-  const titles = document.createElement("div");
-  const kicker = document.createElement("p");
-  kicker.className = "journey__kicker";
-  kicker.textContent = "Lena Ortiz";
-  const title = document.createElement("h2");
-  title.textContent = "Charged twice";
-  titles.append(kicker, title);
-  const close = document.createElement("button");
-  close.type = "button";
-  close.className = "journey__close";
-  close.textContent = "Close";
-  close.addEventListener("click", () => {
-    const button = document.querySelector(".journey-entry");
-    if (button) setJourneyOpen(panel, button, false);
-  });
-  head.append(titles, close);
-
-  const scroll = document.createElement("div");
-  scroll.className = "journey__scroll";
-
-  const lede = document.createElement("p");
-  lede.className = "journey__lede";
-  lede.textContent = "Thursday morning. Jonah Hale writes that order 1044 was charged twice, $86 and $86. One of those charges is already dispute dp_3k19, and the reason says the order never arrived. Friday’s payout is on hold. Lena Ortiz opens help to ask someone to release it.";
-  scroll.appendChild(lede);
-
-  JOURNEY_BEATS.forEach((beat, index) => {
-    const card = document.createElement("article");
-    card.className = "journey-beat";
-    if (beat.screen === page) card.classList.add("is-here");
-    const label = document.createElement("p");
-    label.className = "journey-beat__step";
-    label.textContent = `${index + 1} · ${beat.name}`;
-    card.appendChild(label);
-    const scene = document.createElement("p");
-    scene.textContent = beat.scene;
-    card.appendChild(scene);
-    if (beat.screen !== page) {
-      const link = document.createElement("a");
-      link.className = "journey-beat__go";
-      link.href = beat.href;
-      link.textContent = `Open ${beat.name}`;
-      link.addEventListener("click", () => sessionStorage.setItem(JOURNEY_KEY, "1"));
-      card.appendChild(link);
-    } else {
-      const here = document.createElement("p");
-      here.className = "journey-beat__here";
-      here.textContent = "This is the screen in the window.";
-      card.appendChild(here);
-    }
-    scroll.appendChild(card);
-  });
-
-  const end = document.createElement("article");
-  end.className = "journey-note";
-  const endName = document.createElement("strong");
-  endName.textContent = JOURNEY_END.name;
-  const endCopy = document.createElement("p");
-  endCopy.textContent = JOURNEY_END.copy;
-  end.append(endName, endCopy);
-  scroll.appendChild(end);
-
-  panel.append(head, scroll);
-
-  if (sessionStorage.getItem(JOURNEY_KEY) === "1") {
-    queueMicrotask(() => {
-      const button = document.querySelector(".journey-entry");
-      if (button) setJourneyOpen(panel, button, true);
-    });
+function readPlanResults() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PLAN_RESULT_KEY) || "{}");
+    return saved && typeof saved === "object" ? saved : {};
+  } catch {
+    return {};
   }
-  return panel;
 }
 
-const TEST_PLAN_KEY = "nl-test-plan";
+function writePlanResult(context, col, value) {
+  const saved = readPlanResults();
+  if (!saved[context]) saved[context] = {};
+  saved[context][col] = value;
+  localStorage.setItem(PLAN_RESULT_KEY, JSON.stringify(saved));
+}
 
 const TEST_PLAN = [
   {
-    name: "Will they talk to it",
+    name: "Home",
     href: "index.html",
     screen: "Home",
-    watch: "Home opens as an empty ask. The first thing they touch is the result: the ask box, search, a chip, or Submit a case, while the tile is still quiet.",
-    path: "On Home, log the first interaction and whether the tile had been spoken to. Those four targets are the outcomes. A session that leaves Home without touching the tile counts as silence."
+    watch: "No page summary. Ask AI and the questions people ask most.",
+    path: "Do they go straight to Ask AI, or tap a suggested question?",
+    scene: "You opened Help because your card shows two $86 charges for order 1044. You don’t know yet if this is a refund, a bank dispute, or a missing credit.",
+    task: "What would you do next on this page?",
+    record: "First move: the search bar, a chip, Ask AI, a topic, Popular articles, or Submit a case. Note if the helper was still empty.",
+    ask: "Did you just want to ask, or pick a suggested question?"
   },
   {
-    name: "One tile, four seats",
-    href: "search.html?q=charged+twice",
-    screen: "Search result",
-    watch: "The helper moves from a float, to under the results, into the article, and beside a form. If they treat it as one thing, they continue on the new seat. Starting the question over means they did not.",
-    path: "Stamp every impression with one component id and its placement, tied to the session. Compare time to first use on each later seat with the first, and flag a retyped question. After the second seat, one yes or no in the product — “Same helper as the last page?” — is stored on that impression."
-  },
-  {
-    name: "Their words, the article’s title",
+    name: "Knowledge article",
     href: "article.html?id=duplicate-charge",
     screen: "Knowledge article",
-    watch: "They asked about being charged twice. The page is titled Duplicate charges. Staying and using the page means the title held. Going straight back to search means it did not.",
-    path: "Store the phrase they typed beside the article id and the helper text. Log time on the page, scroll depth, and a return to search. On the way out, one yes or no — “Did this page match what you asked?” — is saved with that pair. The article title stays the knowledge name."
+    watch: "A synthesis of this article from their keywords, plus the questions it usually raises.",
+    path: "Does the summary pull the facts from the page? What follow-up do they actually ask?",
+    scene: "You’ve opened Duplicate charges. It explains how to tell two successful payments from a retry. You already opened a bank dispute on one charge, and you’re not sure whether refunding the extra one closes that dispute.",
+    task: "What would you do next on this page?",
+    record: "Read the summary, scroll the article, ask a follow-up, use the chip, or leave.",
+    ask: "Was the summary useful? What did you still need to ask?"
   },
   {
-    name: "A citation before they leave",
+    name: "Search results",
     href: "search.html?q=charged+twice",
     screen: "Search result",
-    watch: "A number on the helper counts when they open its preview and then the article. Opening the first result without touching a number means they went around it.",
-    path: "Log cite hover, preview shown, how long the preview stayed, cite click, and result click, in order. Search, the action, and the case already render those links. The sequence is the score."
+    watch: "A synthesis of the results from their keywords, plus a way to refine the query.",
+    path: "Does the summary pull facts from the list, or only point at a title?",
+    scene: "You searched “charged twice.” The list mixes an article about the extra payment with one about a refund when a bank dispute is already open. You’re not sure which one to open.",
+    task: "What would you do next on this page?",
+    record: "Open a result, read the AI overview, use Narrow to Refunds or Narrow to Bank disputes, change the topic chips, or ask the helper.",
+    ask: "Did you want the results summarized, or help narrowing the search?"
   },
   {
-    name: "The helper that follows the article",
-    href: "article.html?id=duplicate-charge",
-    screen: "Knowledge article",
-    watch: "After a screen of scrolling, the tile shrinks to a follow-up at the bottom. They use that chip, scroll back to the full tile, or leave. Those are the three outcomes.",
-    path: "Log dock and undock with scroll depth. Tag clicks on the small tile separately from clicks while it is still in the article. A session that docks and never clicks or undocks is an ignore."
-  },
-  {
-    name: "A way out of the case",
-    href: "submit.html",
-    screen: "Submit a case",
-    watch: "Once the helper offers the refund action, they take the chip or they submit the case. The choice is the result.",
-    path: "When the chip appears, store the action id and the words that matched. Record the chip click or the case submit, and the seconds between the offer and that choice. A submit with the chip still on screen is the case-anyway outcome."
-  },
-  {
-    name: "Not typing it twice",
+    name: "Action",
     href: "action.html",
     screen: "Action",
-    watch: "The action already holds the email, the payment id, and the note. They keep a field, change it, or clear it. Clearing a field removes its mark.",
-    path: "Save the case draft with the handoff. When the action is submitted, compare each field to that draft and mark it kept, edited, or cleared. Also log a clear that hid the mark. Fields left as carried are a pass."
+    watch: "Guidance for the action they are about to run, plus the next step.",
+    path: "Do they need instructions, troubleshooting, or a clarification?",
+    scene: "You’re about to request a refund of the extra $86 on order 1044. The form is filled in. You’re not sure if this also closes the bank dispute you already opened.",
+    task: "What would you do next on this page?",
+    record: "Read the helper, open a chip, change a field, send the request, or leave.",
+    ask: "Did you need instructions, troubleshooting, or a clarification?"
   },
   {
-    name: "The question that waits",
-    href: "article.html?id=duplicate-charge",
-    screen: "Knowledge article",
-    watch: "A suggestion appears when they pause. They open it, type their own question, or leave it. Opening it means it was the question. Typing past it means it was not.",
-    path: "Timestamp the pause, the chip label, an open, and a question they type themselves. A typed question after the chip is showing is a miss. Thumbs on the same row join the same stream."
+    name: "Submit a case",
+    href: "submit.html",
+    screen: "Submit a case",
+    watch: "Help preparing the case, plus a self-serve way out if one already exists.",
+    path: "Is AI filling the case, or keeping them from opening one they do not need?",
+    scene: "You’ve started a case about order 1044. Your card shows two $86 charges. The extra charge is still there. You’re not sure if you should send this case, or request the refund yourself.",
+    task: "What would you do next on this page?",
+    record: "Submit the case, take Request the refund, edit the form, or ask the helper.",
+    ask: "Did AI help you fill the case, or keep you from opening one you didn’t need?"
   }
 ];
+
+function buildPlanMatrix(kind) {
+  const results = kind === "result" ? readPlanResults() : null;
+  const wrap = document.createElement("section");
+  wrap.className = `plan-matrix plan-matrix--${kind}`;
+  wrap.setAttribute("aria-label", kind === "hypothesis" ? "Hypothesis" : "Actual result");
+
+  const hint = document.createElement("p");
+  hint.className = "plan-matrix__hint";
+  hint.textContent = kind === "hypothesis"
+    ? "What we think is useful in each cell."
+    : "What they actually used. Click a cell to add notes.";
+  wrap.appendChild(hint);
+
+  const table = document.createElement("table");
+  table.className = "plan-matrix__table";
+  const thead = document.createElement("thead");
+  const headRow = document.createElement("tr");
+  const contextHead = document.createElement("th");
+  contextHead.scope = "col";
+  contextHead.className = "plan-matrix__col-context";
+  contextHead.textContent = "Context";
+  headRow.appendChild(contextHead);
+  PLAN_MATRIX_COLS.forEach((col) => {
+    const th = document.createElement("th");
+    th.scope = "col";
+    th.className = `plan-matrix__col-${col.id}`;
+    th.textContent = col.label;
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  PLAN_MATRIX.forEach((row) => {
+    const tr = document.createElement("tr");
+    const context = document.createElement("th");
+    context.scope = "row";
+    context.className = "plan-matrix__col-context";
+    const link = document.createElement("a");
+    link.href = row.href;
+    link.textContent = row.context;
+    link.addEventListener("click", () => sessionStorage.setItem(TEST_PLAN_KEY, "1"));
+    context.appendChild(link);
+    tr.appendChild(context);
+    PLAN_MATRIX_COLS.forEach((col) => {
+      const td = document.createElement("td");
+      td.className = `plan-matrix__col-${col.id}`;
+      if (kind === "hypothesis") {
+        td.textContent = row[col.id] || "";
+        if (!row[col.id]) td.classList.add("is-empty");
+      } else {
+        const cell = document.createElement("div");
+        cell.className = "plan-matrix__edit";
+        cell.contentEditable = "true";
+        cell.dataset.placeholder = "What they used…";
+        cell.textContent = results?.[row.context]?.[col.id] || "";
+        cell.addEventListener("blur", () => {
+          writePlanResult(row.context, col.id, cell.textContent.trim());
+        });
+        td.appendChild(cell);
+      }
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  return wrap;
+}
+
+function buildPlanMatrixTabs() {
+  const wrap = document.createElement("section");
+  wrap.className = "plan-matrix-tabs";
+
+  const tablist = document.createElement("div");
+  tablist.className = "plan-matrix-tabs__list";
+  tablist.setAttribute("role", "tablist");
+  tablist.setAttribute("aria-label", "Plan 1 matrices");
+
+  const hypothesis = buildPlanMatrix("hypothesis");
+  const result = buildPlanMatrix("result");
+  hypothesis.id = "plan-matrix-hypothesis";
+  result.id = "plan-matrix-result";
+  hypothesis.setAttribute("role", "tabpanel");
+  result.setAttribute("role", "tabpanel");
+
+  const tabs = [
+    { id: "hypothesis", label: "Hypothesis", panel: hypothesis },
+    { id: "result", label: "Actual result", panel: result }
+  ];
+
+  function select(id) {
+    tabs.forEach((tab) => {
+      const on = tab.id === id;
+      tab.button.setAttribute("aria-selected", on ? "true" : "false");
+      tab.button.tabIndex = on ? 0 : -1;
+      tab.panel.hidden = !on;
+    });
+    sessionStorage.setItem(PLAN_MATRIX_TAB_KEY, id);
+  }
+
+  tabs.forEach((tab) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "plan-matrix-tabs__tab";
+    button.id = `plan-matrix-tab-${tab.id}`;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-controls", tab.panel.id);
+    button.textContent = tab.label;
+    button.addEventListener("click", () => select(tab.id));
+    tab.button = button;
+    tab.panel.setAttribute("aria-labelledby", button.id);
+    tablist.appendChild(button);
+  });
+
+  wrap.append(tablist, hypothesis, result);
+  select(sessionStorage.getItem(PLAN_MATRIX_TAB_KEY) === "result" ? "result" : "hypothesis");
+  return wrap;
+}
 
 function mountTestPlan(row) {
   const button = document.createElement("button");
@@ -2016,33 +2182,42 @@ function mountTestPlan(row) {
 }
 
 function setTestPlanOpen(panel, button, open, silent) {
-  panel.hidden = !open;
+  const layer = panel.closest(".journey-layer") || panel;
+  layer.hidden = !open;
   button.setAttribute("aria-expanded", open ? "true" : "false");
   button.setAttribute("aria-pressed", open ? "true" : "false");
-  if (open) {
-    sessionStorage.setItem(TEST_PLAN_KEY, "1");
-    const journeyPanel = document.getElementById("journey");
-    const journeyButton = document.querySelector(".journey-entry");
-    if (journeyPanel && journeyButton && !journeyPanel.hidden) setJourneyOpen(journeyPanel, journeyButton, false);
-  } else sessionStorage.removeItem(TEST_PLAN_KEY);
+  if (open) sessionStorage.setItem(TEST_PLAN_KEY, "1");
+  else sessionStorage.removeItem(TEST_PLAN_KEY);
   if (!silent) window.dispatchEvent(new Event("resize"));
 }
 
 function mountTestPlanPanel() {
+  const layer = document.createElement("div");
+  layer.className = "journey-layer";
+  layer.id = "test-plan";
+  layer.hidden = true;
+
+  const backdrop = document.createElement("button");
+  backdrop.type = "button";
+  backdrop.className = "journey-backdrop";
+  backdrop.setAttribute("aria-label", "Close test plan");
+  backdrop.addEventListener("click", () => {
+    const button = document.querySelector(".test-entry");
+    if (button) setTestPlanOpen(layer, button, false);
+  });
+
   const panel = document.createElement("aside");
   panel.className = "journey";
-  panel.id = "test-plan";
-  panel.hidden = true;
-  panel.setAttribute("aria-label", "Unsupervised user testing plan");
+  panel.setAttribute("aria-label", "Test plan 1 of 3");
 
   const head = document.createElement("div");
   head.className = "journey__head";
   const titles = document.createElement("div");
   const kicker = document.createElement("p");
   kicker.className = "journey__kicker";
-  kicker.textContent = "AI Helper";
+  kicker.textContent = "Plan 1 of 3";
   const title = document.createElement("h2");
-  title.textContent = "User testing";
+  title.textContent = "The right help on each page";
   titles.append(kicker, title);
   const close = document.createElement("button");
   close.type = "button";
@@ -2058,11 +2233,12 @@ function mountTestPlanPanel() {
   scroll.className = "journey__scroll";
   const lede = document.createElement("p");
   lede.className = "journey__lede";
-  lede.textContent = "Unsupervised. They get a link and the task below, and finish alone. Each card is answered from what they do. A yes or no appears in the product only when the action cannot show it, and they answer that themselves.";
+  lede.textContent = "What kind of AI help is actually useful on each Help Center screen. Hypothesis is filled. Open Actual result after a session to record what they used.";
   const task = document.createElement("p");
   task.className = "journey__lede";
-  task.textContent = "Task: A customer says order 1044 was charged twice. Find what to do next. Stop when the refund is started or a case is sent.";
+  task.textContent = "Protocol: show the page, read the scenario, ask the task, stay quiet while they act, then ask the follow-up.";
   scroll.append(lede, task);
+  scroll.appendChild(buildPlanMatrixTabs());
 
   TEST_PLAN.forEach((item, index) => {
     const card = document.createElement("article");
@@ -2072,10 +2248,15 @@ function mountTestPlanPanel() {
     label.textContent = `${index + 1} · ${item.name}`;
     card.appendChild(label);
     [
-      ["On their own", item.watch],
-      ["Path", item.path]
+      ["Hypothesis", item.watch],
+      ["Validate", item.path],
+      ["Scenario", item.scene],
+      ["Task", item.task],
+      ["Record", item.record],
+      ["Then ask", item.ask]
     ].forEach(([name, copy]) => {
       const block = document.createElement("p");
+      if (name === "Scenario") block.className = "journey-beat__scene";
       const strong = document.createElement("strong");
       strong.textContent = name;
       block.append(strong, document.createTextNode(` ${copy}`));
@@ -2091,14 +2272,15 @@ function mountTestPlanPanel() {
   });
 
   panel.append(head, scroll);
+  layer.append(backdrop, panel);
 
   if (sessionStorage.getItem(TEST_PLAN_KEY) === "1") {
     queueMicrotask(() => {
       const button = document.querySelector(".test-entry");
-      if (button) setTestPlanOpen(panel, button, true);
+      if (button) setTestPlanOpen(layer, button, true);
     });
   }
-  return panel;
+  return layer;
 }
 
 function initBlueprintPage() {
@@ -2228,7 +2410,6 @@ function mountTabs() {
     nav.appendChild(link);
   });
   bar.appendChild(nav);
-  mountJourney(bar);
   mountTestPlan(bar);
   mountBlueprint(bar);
 
@@ -2260,9 +2441,11 @@ function mountTabs() {
   browser.setAttribute("aria-label", "Website");
   browser.append(chrome, viewport);
 
+  browser.appendChild(mountTestPlanPanel());
+
   const stage = document.createElement("div");
   stage.className = "studio-stage";
-  stage.append(browser, mountJourneyPanel(), mountTestPlanPanel());
+  stage.append(browser);
 
   const studio = document.createElement("div");
   studio.className = "studio";
@@ -2292,12 +2475,9 @@ function createLiveSummary(card) {
   const askInput = askForm?.querySelector("input");
   if (!textEl || !metaEl || !labelEl) return null;
 
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   mountCitePreview();
-  const caret = document.createElement("span");
-  caret.className = "assist-caret";
-  caret.setAttribute("aria-hidden", "true");
 
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let gen = 0;
   let generating = false;
   let askHandler = null;
@@ -2305,9 +2485,6 @@ function createLiveSummary(card) {
   function wait(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
-
-  let gateQuestion = null;
-  let followQuestion = null;
 
   function chipFor(question) {
     const button = question.href ? document.createElement("a") : document.createElement("button");
@@ -2328,29 +2505,45 @@ function createLiveSummary(card) {
         button.setAttribute("aria-pressed", "true");
         if (question.onOpen) question.onOpen();
         const parts = typeof question.parts === "function" ? question.parts() : question.parts;
-        play(parts, { meta: "Answered your question", phase: "answered" });
+        answerWith(parts);
       });
     }
     return button;
   }
 
-  function paintQuestions() {
+  let offers = [];
+  let nextOffer = null;
+  let lastParts = null;
+  let lastMeta = "";
+
+  function applyAsk(mode) {
+    const askMode = mode || "follow-up";
+    card.dataset.ask = askMode;
+    if (!askInput) return;
+    const first = askMode === "ask";
+    askInput.placeholder = first ? "Ask a question…" : "Ask a follow-up question…";
+    askInput.setAttribute("aria-label", first ? "Ask a question" : "Ask a follow-up question");
+  }
+
+  function paintOffers() {
     if (!questionBox) return;
     questionBox.replaceChildren();
-    if (gateQuestion) questionBox.appendChild(chipFor(gateQuestion));
-    if (followQuestion) questionBox.appendChild(chipFor(followQuestion));
+    if (!featureOn("questions")) return;
+    offers.slice(0, 3).forEach((question) => questionBox.appendChild(chipFor(question)));
+  }
+
+  function setOffers(list) {
+    offers = Array.isArray(list) ? list.filter(Boolean).slice(0, 3) : [];
+    paintOffers();
   }
 
   function hideQuestion() {
-    followQuestion = null;
-    paintQuestions();
+    setOffers([]);
   }
 
   function showQuestion(question) {
-    if (!featureOn("questions") || !questionBox || !question) return;
-    if (question.href) gateQuestion = question;
-    else followQuestion = question;
-    paintQuestions();
+    if (!featureOn("questions") || !question) return;
+    setOffers([question]);
     if (!question.href && !generating && featureOn("meta")) {
       metaEl.textContent = "You paused — this might help";
       card.dataset.phase = "hesitating";
@@ -2358,96 +2551,124 @@ function createLiveSummary(card) {
   }
 
   function finish(parts, options, flags) {
-    caret.remove();
     generating = false;
     card.classList.remove("is-generating");
     card.setAttribute("aria-busy", "false");
-    if (flags.label) labelEl.textContent = options.label || "AI Helper";
+    if (flags.label) labelEl.textContent = "AI Helper";
     if (flags.meta) metaEl.textContent = options.meta || "";
     card.dataset.phase = options.phase || "ready";
-    if (statusEl) statusEl.textContent = parts.map((part) => part.t).join("");
+    if (statusEl && parts) statusEl.textContent = parts.map((part) => part.t).join("");
   }
 
-  async function play(parts, options = {}) {
+  function paintParts(parts) {
+    textEl.replaceChildren();
+    parts.forEach((part) => {
+      if (!part.t) return;
+      if (part.mark) {
+        const markEl = document.createElement("mark");
+        markEl.textContent = part.t;
+        markEl.classList.add("is-hot");
+        textEl.appendChild(markEl);
+      } else {
+        textEl.appendChild(document.createTextNode(part.t));
+      }
+    });
+    if (!reduceMotion) {
+      textEl.classList.remove("is-appearing");
+      void textEl.offsetWidth;
+      textEl.classList.add("is-appearing");
+    }
+  }
+
+  function shapeFor(parts, ask) {
+    const hasSummary = Boolean(parts && parts.length);
+    card.classList.toggle("is-quiet", !hasSummary);
+    card.dataset.summary = hasSummary ? "on" : "off";
+    if (hasSummary) card.dataset.spoke = "1";
+    applyAsk(ask || (hasSummary ? "follow-up" : "ask"));
+  }
+
+  async function reply(options = {}) {
     const token = ++gen;
     const alive = () => token === gen;
-    openSummary(card);
+    const parts = options.parts && options.parts.length ? options.parts : null;
     const flags = {
       body: featureOn("body"),
       generating: featureOn("generating"),
       meta: featureOn("meta"),
       label: featureOn("label")
     };
-    const instant = reduceMotion || !flags.generating;
-    generating = true;
-    card.dataset.phase = "drafting";
-    card.setAttribute("aria-busy", "true");
-    if (flags.generating && flags.body) card.classList.add("is-generating");
-    if (textEl.textContent && !instant && flags.body) {
-      card.classList.add("is-rewriting");
-      await wait(140);
-      if (!alive()) return;
-      card.classList.remove("is-rewriting");
-    }
-    if (flags.label) labelEl.textContent = "Drafting";
-    if (flags.meta) metaEl.textContent = "Reading this screen";
-    textEl.replaceChildren();
-    if (!flags.body) {
+    if (options.offers) setOffers(options.offers);
+    else if (options.clearOffers) setOffers([]);
+    shapeFor(flags.body ? parts : null, options.ask);
+    if (flags.label) labelEl.textContent = "AI Helper";
+    if (!parts || !flags.body) {
+      generating = false;
+      card.classList.remove("is-generating", "is-rewriting");
+      card.setAttribute("aria-busy", "false");
       if (shimmer) shimmer.hidden = true;
+      textEl.replaceChildren();
       textEl.hidden = true;
+      if (flags.meta && options.meta) metaEl.textContent = options.meta;
+      card.dataset.phase = options.phase || "ready";
+      return;
+    }
+    lastParts = parts;
+    lastMeta = options.meta || "";
+    if (options.instant) {
+      generating = false;
+      card.classList.remove("is-generating", "is-rewriting");
+      card.setAttribute("aria-busy", "false");
+      if (shimmer) shimmer.hidden = true;
+      textEl.hidden = false;
+      paintParts(parts);
+      renderCites(textEl, citesForSummary(parts));
       finish(parts, options, flags);
       return;
     }
+    const showSkeleton = flags.generating && !reduceMotion && !options.instant;
+    generating = true;
+    card.dataset.phase = "drafting";
+    card.setAttribute("aria-busy", "true");
+    card.classList.toggle("is-generating", showSkeleton);
+    if (flags.meta) metaEl.textContent = "Reading this screen";
+    textEl.classList.remove("is-appearing");
+    textEl.replaceChildren();
     textEl.hidden = true;
-    if (shimmer) shimmer.hidden = !flags.generating;
-    const think = flags.generating ? (options.think ?? 640) : 0;
-    await wait(instant ? 0 : think + Math.round(Math.random() * 120));
+    if (shimmer) shimmer.hidden = !showSkeleton;
+    await wait(showSkeleton ? 800 : 0);
     if (!alive()) return;
     if (shimmer) shimmer.hidden = true;
+    card.classList.remove("is-generating");
     textEl.hidden = false;
-
-    if (instant) {
-      parts.forEach((part) => {
-        if (!part.t) return;
-        if (part.mark) {
-          const markEl = document.createElement("mark");
-          markEl.textContent = part.t;
-          markEl.classList.add("is-hot");
-          textEl.appendChild(markEl);
-        } else {
-          textEl.appendChild(document.createTextNode(part.t));
-        }
-      });
-    } else {
-      let count = 0;
-      for (const part of parts) {
-        if (!part.t) continue;
-        const markEl = part.mark ? document.createElement("mark") : null;
-        if (markEl) textEl.appendChild(markEl);
-        const parent = markEl || textEl;
-        const tokens = part.t.split(/(\s+)/);
-        for (const tokenText of tokens) {
-          if (!alive()) return;
-          if (!tokenText) continue;
-          if (/^\s+$/.test(tokenText)) {
-            parent.appendChild(document.createTextNode(tokenText));
-            continue;
-          }
-          const word = document.createElement("span");
-          word.className = "assist-word";
-          word.textContent = tokenText;
-          parent.appendChild(word);
-          textEl.appendChild(caret);
-          count += 1;
-          await wait(count < 7 ? 28 : 14);
-        }
-        if (markEl) markEl.classList.add("is-hot");
-      }
-    }
-
+    paintParts(parts);
     if (!alive()) return;
     renderCites(textEl, citesForSummary(parts));
     finish(parts, options, flags);
+  }
+
+  function play(parts, options = {}) {
+    return reply({
+      parts,
+      ask: options.ask || "follow-up",
+      offers: options.offers,
+      clearOffers: options.clearOffers,
+      meta: options.meta,
+      phase: options.phase,
+      instant: options.instant
+    });
+  }
+
+  function answerWith(parts, meta) {
+    const follow = typeof nextOffer === "function" ? nextOffer() : null;
+    reply({
+      parts,
+      ask: "follow-up",
+      offers: follow ? [follow] : [],
+      clearOffers: !follow,
+      meta: meta || "Answered your question",
+      phase: "answered"
+    });
   }
 
   askForm?.addEventListener("submit", (event) => {
@@ -2455,11 +2676,10 @@ function createLiveSummary(card) {
     const value = askInput?.value.trim() || "";
     if (!value || generating) return;
     askInput.value = "";
-    hideQuestion();
     const parts = askHandler
       ? askHandler(value)
       : [plain("On “"), marked(clipText(value, 80)), plain("”.")];
-    play(parts, { meta: "Answered your question", phase: "answered" });
+    answerWith(parts);
   });
 
   card.querySelectorAll("[data-assist-helpful]").forEach((button) => {
@@ -2470,13 +2690,38 @@ function createLiveSummary(card) {
     });
   });
 
+  function collapse(suggestion) {
+    gen += 1;
+    generating = false;
+    card.classList.remove("is-generating");
+    card.setAttribute("aria-busy", "false");
+    card.classList.add("is-quiet");
+    card.dataset.summary = "off";
+    card.dataset.spoke = "1";
+    applyAsk("follow-up");
+    if (shimmer) shimmer.hidden = true;
+    textEl.hidden = true;
+    if (suggestion) setOffers([suggestion]);
+  }
+
+  function restore() {
+    if (!lastParts) return;
+    reply({ parts: lastParts, ask: "follow-up", offers: [], clearOffers: true, instant: true, meta: lastMeta });
+  }
+
   return {
     play,
+    reply,
+    collapse,
+    restore,
     showQuestion,
     hideQuestion,
     isGenerating: () => generating,
     setAsk(handler) {
       askHandler = handler;
+    },
+    setNextOffer(handler) {
+      nextOffer = handler;
     }
   };
 }
@@ -2510,80 +2755,83 @@ function summaryParts(query, topic, results) {
     else if (/2fa|authenticator|security|recovery|login/.test(q)) lead = "Security";
   }
   if (!results.length) {
-    return [plain("Nothing matches that wording. Try a shorter phrase, or "), marked("submit a case"), plain(".")];
+    return [plain("Nothing on this list matches that wording. Try a shorter phrase, or "), marked("submit a case"), plain(".")];
   }
-  if (/twice|duplicate/.test(q)) {
-    return [
-      plain("This is two records. "),
-      marked("py_1044"),
-      plain(" is the extra $86. "),
-      marked("dp_3k19"),
-      plain(" is already open on the other charge, and the reason says the order never arrived. Start with "),
-      marked("Duplicate charges"),
-      plain(", then "),
-      marked("Refund a payment that already has a dispute"),
-      plain(". Friday’s payout stays held until the dispute is answered in the dashboard.")
-    ];
-  }
+  if (q.trim()) return resultsContentParts(query, results);
   if (lead) {
     const count = `${results.length} matching article${results.length === 1 ? "" : "s"}`;
     return [...topicLead(lead), plain(" "), marked(count), plain(".")];
   }
-  const top = results[0];
-  return [plain("The closest match is "), marked(top.title), plain(". "), plain(top.snippet)];
+  return resultsContentParts(query, results);
+}
+
+function searchOffers(query, topic, results) {
+  const q = (query || "").toLowerCase();
+  if (/twice|duplicate/.test(q)) {
+    const offers = [];
+    if (topic !== "Refunds") {
+      offers.push({
+        id: "narrow-refunds",
+        kind: "action",
+        label: "Narrow to Refunds",
+        href: searchUrl(query, "Refunds")
+      });
+    }
+    if (topic !== "Disputes") {
+      offers.push({
+        id: "narrow-disputes",
+        kind: "action",
+        label: "Narrow to Bank disputes",
+        href: searchUrl(query, "Disputes")
+      });
+    }
+    return offers;
+  }
+  if (/dispute|evidence/.test(q) || topic === "Disputes") {
+    return [{
+      id: "evidence",
+      kind: "question",
+      label: "What should I send my bank?",
+      parts: () => topicLead("Disputes")
+    }];
+  }
+  if (!results.length) {
+    return [{ id: "case", kind: "action", label: "Submit a case", href: "submit.html" }];
+  }
+  return [{
+    id: "open",
+    kind: "action",
+    label: `Open ${clipText(results[0].title, 42)}`,
+    href: `article.html?id=${encodeURIComponent(results[0].id)}`
+  }];
 }
 
 function mountSearchSummary() {
   const summary = createLiveSummary(ensureSummarySlot());
   if (!summary) return;
-  const pause = armPause(summary, (asked) => {
-    const query = document.querySelector("[data-search-form] input[name='q']")?.value || "";
-    const topic = new URLSearchParams(window.location.search).get("topic") || "";
-    if (/twice|duplicate/.test(query.toLowerCase()) && !asked.has("payout")) {
-      return {
-        id: "payout",
-        label: "Does refunding the extra charge release Friday’s payout?",
-        onOpen() { asked.add("payout"); },
-        parts: () => [
-          plain("No. Friday’s payout stays held until "),
-          marked("dp_3k19"),
-          plain(" is answered in Disputes. Refunding "),
-          marked("py_1044"),
-          plain(" only returns the extra $86.")
-        ]
-      };
-    }
-    if ((/dispute|evidence/.test(query.toLowerCase()) || topic === "Disputes") && !asked.has("evidence")) {
-      return { id: "evidence", label: "What evidence do I need?", onOpen() { asked.add("evidence"); }, parts: () => topicLead("Disputes") };
-    }
-    if (!asked.has("which")) {
-      return {
-        id: "which",
-        label: "Which result should I open?",
-        onOpen() { asked.add("which"); },
-        parts: () => {
-          const results = searchArticles(query, topic || "All");
-          const top = results[0];
-          if (!top) return [plain("None of these match. "), marked("Submit a case"), plain(" if the phrase is already short.")];
-          return [plain("Start with "), marked(top.title), plain(". "), plain(top.snippet)];
-        }
-      };
-    }
-    return null;
-  });
+  const asked = new Set();
   window.__summarizeSearch = (query, topic, results) => {
-    summary.play(summaryParts(query, topic, results), {
-      meta: results.length ? `Based on ${results.length} articles` : "No matching articles",
-      phase: "drafting",
-      think: 320
+    summary.reply({
+      parts: summaryParts(query, topic, results),
+      ask: "follow-up",
+      offers: searchOffers(query, topic, results),
+      meta: results.length ? `From ${results.length} articles on this page` : "No matching articles",
+      phase: "drafting"
     });
-    pause();
   };
   window.__summarizeArticle = (article) => {
-    summary.play(
-      [plain(article.snippet), plain(" Start with "), marked(article.steps[0] || article.title), plain(".")],
-      { meta: article.path, phase: "drafting", think: 240 }
-    );
+    summary.reply({
+      parts: articleContentParts(article),
+      ask: "follow-up",
+      offers: [{
+        id: "open-article",
+        kind: "action",
+        label: `Open ${clipText(article.title, 42)}`,
+        href: `article.html?id=${encodeURIComponent(article.id)}`
+      }],
+      meta: article.path,
+      phase: "drafting"
+    });
   };
   let hovered = "";
   document.getElementById("result-list")?.addEventListener("mouseover", (event) => {
@@ -2592,11 +2840,18 @@ function mountSearchSummary() {
     hovered = link.dataset.id;
     const article = ARTICLES.find((item) => item.id === hovered);
     if (!article) return;
-    summary.play(
-      [plain("This result is "), marked(article.title), plain(". "), plain(article.snippet)],
-      { meta: article.path, phase: "drafting", think: 160 }
-    );
-    pause();
+    summary.reply({
+      parts: articleContentParts(article),
+      ask: "follow-up",
+      offers: [{
+        id: "open",
+        kind: "action",
+        label: `Open ${clipText(article.title, 42)}`,
+        href: `article.html?id=${encodeURIComponent(article.id)}`
+      }],
+      meta: `From this result · ${article.path}`,
+      phase: "drafting"
+    });
   });
   summary.setAsk((value) => answerFreeform(value, {
     topic: new URLSearchParams(window.location.search).get("topic") || "",
@@ -2605,6 +2860,20 @@ function mountSearchSummary() {
     reference: "",
     priority: "Normal"
   }));
+  summary.setNextOffer(() => {
+    if (asked.has("which")) return null;
+    asked.add("which");
+    return {
+      id: "which",
+      kind: "question",
+      label: "What do these articles say?",
+      parts: () => {
+        const query = document.querySelector("[data-search-form] input[name='q']")?.value || lastSearchQuery();
+        const topic = new URLSearchParams(window.location.search).get("topic") || "All";
+        return resultsContentParts(query, searchArticles(query, topic));
+      }
+    };
+  });
 }
 
 function initHomeSummary() {
@@ -2613,67 +2882,70 @@ function initHomeSummary() {
   if (!summary) return;
   const input = document.querySelector("[data-search-form] input[name='q']");
   let focusTopic = "";
-  const pause = armPause(summary, (asked) => {
-    const typed = input?.value.trim() || "";
-    if (typed && !asked.has("typed")) {
-      return {
-        id: "typed",
-        label: `Search for “${clipText(typed, 42)}”?`,
-        onOpen() { asked.add("typed"); },
-        parts: () => [plain("That lines up with "), marked(typed), plain(". The Search result tab opens the matching articles.")]
-      };
-    }
-    if (!asked.has("where")) {
-      return {
-        id: "where",
-        label: "Where should I start?",
-        onOpen() { asked.add("where"); },
-        parts: () => [
-          plain("If money is stuck, open "),
-          marked("Payouts"),
-          plain(". If a cardholder wrote in, open "),
-          marked("Disputes"),
-          plain(".")
-        ]
-      };
-    }
-    return null;
-  });
-  input?.addEventListener("focus", () => {
-    summary.play(
-      [plain("Type the thing you’re stuck on. "), marked("Dispute, payout, verification, or refund"), plain(" is enough to start.")],
-      { meta: "Reading the search field", phase: "drafting", think: 220 }
-    );
-  });
+  const asked = new Set();
   input?.addEventListener("input", () => {
     const value = input.value.trim();
-    if (value.length < 2) return;
-    summary.play(
-      [plain("You’re describing "), marked(clipText(value, 80)), plain(". I’ll match that against the help articles.")],
-      { meta: "Updated from what you typed", phase: "drafting", think: 200 }
-    );
-    pause();
+    if (value.length < 2) {
+      summary.reply({ parts: null, ask: "ask", offers: [] });
+      return;
+    }
+    summary.reply({
+      parts: [plain("You’re describing "), marked(clipText(value, 80)), plain(".")],
+      ask: "follow-up",
+      offers: [{
+        id: "search",
+        kind: "action",
+        label: `Search for “${clipText(value, 42)}”`,
+        href: searchUrl(value)
+      }],
+      meta: "Updated from what you typed",
+      phase: "drafting"
+    });
   });
   document.querySelectorAll(".topic-card").forEach((card) => {
     card.addEventListener("mouseenter", () => {
       const name = card.querySelector("h2")?.textContent?.trim() || "";
       if (!name || name === focusTopic) return;
       focusTopic = name;
-      const known = ["Disputes", "Payouts", "Verification", "Refunds", "Security"].includes(name);
-      summary.play(
-        known ? topicLead(name) : [plain("If the articles don’t cover it, "), marked("submit a case"), plain(" and include the payment or dispute id.")],
-        { meta: name, phase: "drafting", think: 180 }
-      );
-      pause();
+      const blurb = card.querySelector("p")?.textContent?.trim();
+      const key = topicKeyFromLabel(name);
+      summary.reply({
+        parts: blurb ? [plain(blurb)] : [plain("Start with "), marked(name), plain(".")],
+        ask: "follow-up",
+        offers: [{
+          id: name,
+          kind: "action",
+          label: key ? `Open ${name}` : "Submit a case",
+          href: key ? searchUrl("", key) : "submit.html"
+        }],
+        meta: name,
+        phase: "drafting"
+      });
     });
   });
   summary.setAsk((value) => answerFreeform(value, {
-    topic: ["Disputes", "Payouts", "Verification", "Refunds", "Security"].includes(focusTopic) ? focusTopic : "",
+    topic: topicKeyFromLabel(focusTopic),
     subject: "",
     details: value,
     reference: "",
     priority: "Normal"
   }));
+  summary.setNextOffer(() => {
+    if (asked.has("where")) return null;
+    asked.add("where");
+    return {
+      id: "where",
+      kind: "question",
+      label: "Where should I start?",
+      parts: () => [
+        plain("If a refund has not shown up, open "),
+        marked("Waiting on money"),
+        plain(". If you asked your bank to review a charge, open "),
+        marked("Bank disputes"),
+        plain(".")
+      ]
+    };
+  });
   bindHomeFloat();
 }
 
@@ -2718,13 +2990,13 @@ function chargedTwiceArticle(article) {
     <p>You might see two charges from the same purchase on your card statement. That does not always mean you paid twice. This page explains what those lines usually are, and what happens if one of them is refunded.</p>
     <h2>Why you might see two lines</h2>
     <p>Your bank can show a pending authorization and then the final charge. It can also show a payment that did not go through, followed by one that did. Those are not two payments.</p>
-    <p>You were charged twice when both lines went through for the same order and the same amount. Each one has its own payment. A line that failed, or that is still pending, is not money you paid.</p>
+    <p>You were charged twice when both lines went through for the same order and the same amount. Each one is its own payment. A line that failed, or that is still pending, is not money you paid.</p>
     <h2>What a refund does</h2>
     <p>A refund sends one of those payments back to your card. If you were charged twice, that is the extra payment, not both. You should see it on your statement in 5 to 10 business days. Your bank decides the exact day.</p>
     <p>A refund does not erase the other charge. It also does not cancel a dispute you already opened with your bank.</p>
     <h2>If you already contacted your bank</h2>
     <p>A dispute is your bank asking about one charge. It stays on that charge even if another payment for the same amount is refunded. The bank’s review and the refund are two different things.</p>
-    <p>The date in a letter from your bank may not match the date you see with the business. Use the date on the dispute itself. A refund receipt can be part of that review, but the refund alone does not finish it.</p>
+    <p>The date in a letter from your bank may not match the date you see here. Use the date on the dispute itself. A refund receipt can be part of that review, but the refund alone does not finish it.</p>
     <h2>What you can check</h2>
     <ol class="article-steps">${stepList}</ol>
     <h2>Did both charges go through?</h2>
@@ -2732,7 +3004,7 @@ function chargedTwiceArticle(article) {
     <h2>Is a refund on the way?</h2>
     <p>Look for a refund in the amount of the extra charge. It can take 5 to 10 business days to appear. The original charge can stay on your statement while the refund is listed separately.</p>
     <h2>Did you also ask your bank to review a charge?</h2>
-    <p>That review continues on its own. A refund of the other charge does not close it. If something on this page does not match what you see, <a href="submit.html" style="color: var(--brand-navy-deep); font-weight: 600;">contact support</a> and tell us the date and amount on your statement.</p>`;
+    <p>That review continues on its own. A refund of the other charge does not close it. If something on this page does not match what you see, <a href="submit.html" style="color: var(--brand-navy-deep); font-weight: 600;">submit a case</a> and tell us the date and amount on your statement.</p>`;
 }
 
 function longArticleHtml(article) {
@@ -2746,19 +3018,19 @@ function longArticleHtml(article) {
     .map(
       (step, index) => `
       <h2>${index + 1}. ${step}</h2>
-      <p>${step} Do this before you move on. ${topic} cases are decided on the packet you send, not on a note you meant to add later. Keep the file name obvious, and don’t mix this step with the next one.</p>
-      <p>If you are unsure, stop and reread “${title}”. The dashboard date is the one that counts. A file sent after that date is not added to the review, even when the charge itself was valid.</p>`
+      <p>${step} Do this before you move on. Keep the receipt, the date, and the amount together so we can find the same charge you see.</p>
+      <p>If you are unsure, stop and reread “${title}”. The date on your statement or bank letter is the one that counts.</p>`
     )
     .join("");
   return `
     ${paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("")}
     <h2>Why the summary is the short version</h2>
-    <p>${snippet} The rest of this article is the long version: what to open, what to attach, what to ignore, and what happens after you send it. If you only have a minute, the summary above is the part worth keeping.</p>
-    <p>People usually land here after something already went wrong — a hold, a deadline, or a customer who wrote in. Read the heading, then the summary, then come back to the section that matches where you are stuck. You do not need to finish every paragraph before you act.</p>
-    <h2>Where to work in the dashboard</h2>
-    <p>Stay inside the ${topic} area named in the summary. A screenshot from email, a forwarded thread, or a note in another tool does not become part of the case. The review only sees what you submit on that screen.</p>
-    <p>Open the record that matches the id you were given. If two rows look alike, compare the ids before you attach anything. Sending a complete packet on the wrong record is the same as sending nothing on the right one.</p>
-    <p>${paragraphs[0] || snippet} Write down the id, the date on the screen, and the reason before you start collecting files. Those three facts are what the rest of the steps hang on.</p>
+    <p>${snippet} The rest of this article is the long version: what to check, what to keep, and what happens after you write in. If you only have a minute, the summary above is the part worth keeping.</p>
+    <p>People usually land here after something already went wrong — a second charge, a missing refund, or a letter from the bank. Read the heading, then the summary, then come back to the section that matches where you are stuck. You do not need to finish every paragraph before you act.</p>
+    <h2>What to check first</h2>
+    <p>Start with the ${topic} details named in the summary. A screenshot from email helps us only if it shows the date, the amount, and the store name.</p>
+    <p>If two lines on your statement look alike, compare the dates and the last four digits before you write in. Telling us about the wrong charge is the same as saying nothing about the right one.</p>
+    <p>${paragraphs[0] || snippet} Write down the order id, the date on your statement, and the amount before you collect anything else. Those three facts are what the rest of the steps hang on.</p>
     <h2>Work through it in order</h2>
     <ol class="article-steps">
       ${steps
@@ -2770,16 +3042,16 @@ function longArticleHtml(article) {
     </ol>
     ${stepBlocks}
     <h2>A full pass, not a partial one</h2>
-    <p>Gather everything the reason asks for before you upload. A half packet is reviewed as-is. You usually cannot add the missing page after the case has moved on, and a second upload does not extend the date on the screen.</p>
-    <p>Name files so a reviewer can tell them apart: the notice, the delivery proof, the customer thread, the refund receipt. One combined scan is harder to read than four short files. Keep each file under the size shown on the upload screen.</p>
-    <p>Match the evidence to the reason. A delivery case needs a carrier scan. A “not as described” case needs the listing and the policy the customer accepted. A duplicate-charge case needs both payment ids. Extra files that don’t answer the reason do not help.</p>
+    <p>Gather what the steps ask for before you write in. A half story is reviewed as-is. You usually cannot add a missing receipt after the case has moved on.</p>
+    <p>Keep files easy to tell apart: the bank notice, the receipt, the refund email. One combined scan is harder to read than a few short files.</p>
+    <p>Match what you send to what happened. Two charges need both dates and amounts. A missing refund needs the refund date. Extra files that don’t answer the question do not help.</p>
     <h2>What usually goes wrong</h2>
-    <p>The deadline in a bank letter is not the deadline in the dashboard. Use the date on the case. Late files are not reviewed, even when the charge was valid and the customer was wrong.</p>
-    <p>Emailing the file to support does not attach it. The address on your account and the name on the document have to match. A blurry photo, a cropped edge, or a password-protected file is treated as missing.</p>
-    <p>Refunding the customer does not close the case by itself. If you already returned the money, put the receipt in the packet and still send the response. The two actions answer different questions.</p>
+    <p>The date in a bank letter may not match the date you see here. Use the date on the notice you got. A late reply can turn an inquiry into a chargeback.</p>
+    <p>Emailing a file does not always attach it to a review we already started. Follow the link in the request if we asked for a document. A blurry photo or a cropped edge is treated as missing.</p>
+    <p>A refund does not close a bank dispute by itself. If you already have a refund of a different charge, keep that receipt. The two reviews answer different questions.</p>
     <h2>After you send it</h2>
-    <p>You should get a confirmation with a case id. Keep that id. Status changes show on the same record, not in a separate inbox. A win returns the charge after the network releases it. A loss keeps the debit, and a fee that posted when the case opened is not returned with it.</p>
-    <p>If the articles still don’t cover what you are seeing, submit a case and include the payment or dispute id, what you already tried, and the confirmation id if you have one. Cases are answered within one business day.</p>
+    <p>You should get a confirmation with a case id. Keep that id. A reply goes to the email on the case, usually within one business day.</p>
+    <p>If the articles still don’t cover what you are seeing, submit a case and include the order or payment id, what you already tried, and the confirmation id if you have one.</p>
     <p>Still stuck after these steps? <a href="submit.html" style="color: var(--brand-navy-deep); font-weight: 600;">Submit a case</a> and include the payment or dispute id.</p>`;
 }
 
@@ -2803,11 +3075,11 @@ function initArticlePage() {
   const summary = createLiveSummary(ensureSummarySlot());
   if (!summary) return;
   const questions = {
-    Disputes: { id: "deadline", label: "What if I miss the deadline?", parts: () => [plain("A late packet is "), marked("not reviewed"), plain(", even when the charge was valid. The date on the dispute is the one that counts.")] },
-    Payouts: { id: "balance", label: "Is the balance still mine?", parts: () => [plain("Yes. A hold "), marked("does not cancel the balance"), plain(". It stays until the review finishes.")] },
-    Verification: { id: "email-file", label: "Can I send the file by email?", parts: () => [plain("No. Email is not added to the review. Upload in "), marked("Account → Verification"), plain(".")] },
-    Refunds: { id: "close", label: "Does a refund close a dispute?", parts: () => [plain("No. Refund the payment, and still respond in Disputes with the "), marked("refund receipt"), plain(".")] },
-    Security: { id: "codes", label: "What if I lost the recovery codes?", parts: () => [plain("Support can reset access after "), marked("the business is verified"), plain(". A previously trusted browser is faster.")] }
+    Disputes: { id: "deadline", label: "What if I miss the bank’s deadline?", parts: () => [plain("The date on the "), marked("letter or app notice"), plain(" is the one that counts. A late reply can turn an inquiry into a chargeback.")] },
+    Payouts: { id: "balance", label: "When should I see the money?", parts: () => [plain("A refund or credit usually shows in "), marked("5 to 10 business days"), plain(". Search your statement for the original store name.")] },
+    Verification: { id: "email-file", label: "Can I send the file by email?", parts: () => [plain("Use the "), marked("link in the request"), plain(". A file sent only in a case is not always added to that review.")] },
+    Refunds: { id: "close", label: "Does a refund close my bank dispute?", parts: () => [plain("No. The refund and the bank dispute are "), marked("two different reviews"), plain(". The bank still finishes the one you opened.")] },
+    Security: { id: "codes", label: "What if I lost the recovery codes?", parts: () => [plain("A "), marked("previously trusted browser"), plain(" is faster. Otherwise we reset access after we confirm the account is yours.")] }
   };
   const articleQuestion = article.id === "duplicate-charge"
     ? {
@@ -2838,25 +3110,27 @@ function initArticlePage() {
     }
     return null;
   });
-  const opening = article.id === "duplicate-charge"
-    ? [
-        plain("You said you were charged twice. This page explains when both charges actually went through, and what a "),
-        marked("refund"),
-        plain(" changes. A dispute with your bank stays separate.")
-      ]
-    : [plain(article.snippet)];
-  summary.play(opening, { meta: `From this article · Updated ${article.updated}`, phase: "landed" });
+  summary.reply({
+    parts: articleContentParts(article),
+    ask: "follow-up",
+    offers: [],
+    meta: `From this article · Updated ${article.updated}`,
+    phase: "landed"
+  });
   pause();
   root.querySelectorAll("[data-step]").forEach((button) => {
     button.addEventListener("click", () => {
       root.querySelectorAll("[data-step]").forEach((other) => other.setAttribute("aria-pressed", "false"));
       button.setAttribute("aria-pressed", "true");
       const index = Number(button.dataset.step);
-      summary.play(
-        [plain("In this article: "), marked(article.steps[index]), plain(".")],
-        { meta: "Updated from the step you opened", phase: "drafting", think: 220 }
-      );
-      pause();
+      const follow = articleQuestion || questions[article.topic];
+      summary.reply({
+        parts: [plain("In this article: "), marked(article.steps[index]), plain(".")],
+        ask: "follow-up",
+        offers: follow ? [{ ...follow, kind: "question" }] : [],
+        meta: "Updated from the step you opened",
+        phase: "drafting"
+      });
     });
   });
   summary.setAsk((value) => {
@@ -2864,129 +3138,182 @@ function initArticlePage() {
     if (articleQuestion && /refund|close|dispute/.test(q)) return articleQuestion.parts();
     const topicQuestion = questions[article.topic];
     if (topicQuestion && /deadline|hold|email|upload|refund|code|lost/.test(q)) return topicQuestion.parts();
-    return [plain("On “"), marked(clipText(value, 80)), plain("”: "), plain(article.snippet)];
+    return articleContentParts(article);
   });
-  bindArticleDock(summary, articleQuestion || questions[article.topic]);
+  summary.setNextOffer(() => {
+    const follow = articleQuestion || questions[article.topic];
+    return follow ? { ...follow, kind: "question" } : null;
+  });
+  bindArticleDock(summary, articleQuestion || questions[article.topic], pause);
 }
 
-function bindArticleDock(summary, suggestion) {
+function bindArticleDock(summary, suggestion, onUndock) {
   const viewport = document.querySelector(".browser-viewport");
   const slot = document.querySelector("[data-summary-slot]");
   if (!viewport || !slot) return;
-  let docked = false;
-  let animating = false;
-  let spacer = null;
-  let flipId = 0;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const holder = document.createElement("div");
+  holder.className = "summary-holder";
+  slot.before(holder);
+  holder.appendChild(slot);
 
-  function pin() {
-    slot.style.top = `${viewport.scrollTop + viewport.clientHeight - slot.offsetHeight - 20}px`;
+  let phase = "flow";
+  let fullHeight = 0;
+  let cardInset = 0;
+  let floater = null;
+  let ticking = false;
+  const dockGap = 20;
+
+  function edgeY() {
+    const header = viewport.querySelector(".site-header");
+    if (header) return header.getBoundingClientRect().bottom;
+    return viewport.getBoundingClientRect().top;
   }
 
-  function flip(first, last) {
-    if (reduceMotion) {
-      animating = false;
-      if (docked) pin();
-      return;
+  function pin() {
+    slot.style.top = `${viewport.scrollTop + viewport.clientHeight - slot.offsetHeight - dockGap}px`;
+  }
+
+  function clearWrap() {
+    slot.style.clipPath = "";
+    if (floater) floater.remove();
+    floater = null;
+  }
+
+  function floaterStamp() {
+    return slot.querySelector(".question-btn")?.textContent || suggestion?.label || "";
+  }
+
+  function ensureFloater() {
+    if (floater) return;
+    floater = slot.cloneNode(true);
+    floater.removeAttribute("data-summary-slot");
+    floater.classList.add("summary-floater");
+    floater.setAttribute("aria-hidden", "true");
+    floater.inert = true;
+    floater.style.clipPath = "none";
+    const card = floater.querySelector(".case-assist");
+    if (card) {
+      card.classList.add("is-quiet");
+      card.dataset.summary = "off";
     }
-    const dx = first.left - last.left;
-    const dy = first.top - last.top;
-    if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
-      animating = false;
-      if (docked) pin();
-      return;
+    const box = floater.querySelector("[data-summary-questions]");
+    if (box && suggestion?.label && !box.querySelector(".question-btn")) {
+      const button = document.createElement("span");
+      button.className = "question-btn";
+      const badge = document.createElement("span");
+      badge.className = "q";
+      badge.setAttribute("aria-hidden", "true");
+      badge.textContent = "?";
+      button.append(badge, document.createTextNode(suggestion.label));
+      box.appendChild(button);
     }
-    const id = ++flipId;
-    animating = true;
-    slot.style.transition = "none";
-    slot.style.transform = `translate(${dx}px, ${dy}px)`;
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        if (id !== flipId) return;
-        slot.style.transition = "transform 560ms cubic-bezier(0.22, 1, 0.36, 1)";
-        slot.style.transform = "translate(0px, 0px)";
-      });
-    });
-    const done = (event) => {
-      if (id !== flipId || event.propertyName !== "transform") return;
-      slot.style.transition = "";
-      slot.style.transform = "";
-      animating = false;
-      if (docked) pin();
-      slot.removeEventListener("transitionend", done);
-    };
-    slot.addEventListener("transitionend", done);
+    viewport.appendChild(floater);
+  }
+
+  function layoutRise(p) {
+    const stamp = floaterStamp();
+    if (floater && floater.dataset.stamp !== stamp) {
+      floater.remove();
+      floater = null;
+    }
+    ensureFloater();
+    floater.dataset.stamp = stamp;
+    const travel = floater.offsetHeight + dockGap;
+    const viewBottom = viewport.scrollTop + viewport.clientHeight;
+    floater.style.top = `${viewBottom - travel * p}px`;
+  }
+
+  function wrap(exited, height) {
+    phase = "snake";
+    const p = Math.min(1, Math.max(0, exited / height));
+    slot.style.clipPath = `inset(${Math.max(0, exited)}px 0 0 0)`;
+    layoutRise(p);
   }
 
   function dock() {
-    if (docked) return;
-    const first = slot.getBoundingClientRect();
-    const styles = getComputedStyle(slot);
-    spacer = document.createElement("div");
-    spacer.className = "summary-spacer";
-    spacer.style.height = `${slot.offsetHeight + parseFloat(styles.marginTop) + parseFloat(styles.marginBottom)}px`;
-    slot.before(spacer);
-    viewport.appendChild(slot);
-    slot.classList.add("is-docked");
-    document.body.classList.add("is-summary-docked");
+    if (phase !== "docked") {
+      fullHeight = slot.offsetHeight;
+      cardInset = slot.getBoundingClientRect().top - holder.getBoundingClientRect().top;
+      holder.style.minHeight = `${holder.offsetHeight}px`;
+      clearWrap();
+      viewport.appendChild(slot);
+      slot.classList.add("is-docked");
+      document.body.classList.add("is-summary-docked");
+      summary.collapse(suggestion);
+      phase = "docked";
+    }
     pin();
-    const box = slot.querySelector("[data-summary-questions]");
-    if (suggestion && box && !box.childElementCount) summary.showQuestion(suggestion);
-    docked = true;
-    flip(first, slot.getBoundingClientRect());
   }
 
-  function undock() {
-    if (!docked) return;
-    const first = slot.getBoundingClientRect();
-    docked = false;
+  function release(startPause) {
+    const wasDocked = phase === "docked";
+    clearWrap();
     slot.classList.remove("is-docked");
     document.body.classList.remove("is-summary-docked");
-    slot.style.transition = "";
-    slot.style.transform = "";
     slot.style.top = "";
-    if (spacer) spacer.replaceWith(slot);
-    spacer = null;
-    flip(first, slot.getBoundingClientRect());
+    holder.style.minHeight = "";
+    if (slot.parentElement !== holder) holder.appendChild(slot);
+    phase = "flow";
+    if (wasDocked) summary.restore();
+    if (startPause && wasDocked && onUndock) onUndock();
   }
 
-  const marker = document.createElement("div");
-  marker.setAttribute("aria-hidden", "true");
-  marker.style.cssText = "position:absolute;left:0;width:1px;height:1px;pointer-events:none;";
-  viewport.appendChild(marker);
-
-  function placeMarker() {
-    marker.style.top = `${viewport.clientHeight}px`;
-  }
-
-  let ticking = false;
   function sync() {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
       ticking = false;
-      const rel = marker.getBoundingClientRect().top - viewport.getBoundingClientRect().top;
-      if (!docked && rel <= 0) dock();
-      else if (docked && rel > 120) undock();
-      else if (docked && !animating) pin();
+      const height = phase === "docked" ? fullHeight : slot.offsetHeight;
+      if (!height) return;
+      const cardTop = phase === "docked"
+        ? holder.getBoundingClientRect().top + cardInset
+        : slot.getBoundingClientRect().top;
+      const exited = edgeY() - cardTop;
+
+      if (reduceMotion) {
+        if (exited >= height) dock();
+        else if (phase !== "flow") release(true);
+        return;
+      }
+
+      if (phase === "docked" && exited >= height - 12) {
+        pin();
+        return;
+      }
+
+      if (exited <= 0) {
+        if (phase !== "flow") release(true);
+        return;
+      }
+
+      if (exited >= height) {
+        dock();
+        return;
+      }
+
+      if (phase === "docked") release(false);
+      const liveTop = slot.getBoundingClientRect().top;
+      const liveHeight = slot.offsetHeight;
+      const again = edgeY() - liveTop;
+      if (again <= 0 || !liveHeight) return;
+      if (again >= liveHeight) {
+        dock();
+        return;
+      }
+      wrap(again, liveHeight);
     });
   }
 
-  placeMarker();
-  const observer = new IntersectionObserver(sync, { root: viewport, threshold: [0, 1] });
-  observer.observe(marker);
   viewport.addEventListener("scroll", sync, { passive: true });
-  window.addEventListener("resize", () => {
-    placeMarker();
-    sync();
-  });
+  window.addEventListener("resize", sync);
 }
 
 const ACTION_LABELS = {
-  review: "Request a payout review",
-  remind: "Send an evidence reminder",
-  refund: "Refund a payment",
-  reset: "Reset an authenticator"
+  review: "Check a missing refund",
+  remind: "Ask about a bank dispute",
+  refund: "Request a refund",
+  reset: "Reset two-factor"
 };
 
 function readAction(form) {
@@ -2998,31 +3325,35 @@ function readAction(form) {
   };
 }
 
+function actionHasOpenDispute(draft) {
+  return /dispute|bank/.test(`${draft.reference} ${draft.note}`.toLowerCase());
+}
+
 function actionParts(draft) {
   if (!draft.action) {
     return [
-      plain("Pick an action and who it applies to. Nothing runs until you confirm. A "),
-      marked("reference id"),
-      plain(" keeps the automation on the right record.")
+      plain("Pick what you want us to do. Nothing sends until you confirm. An "),
+      marked("order or payment id"),
+      plain(" keeps the request on the right charge.")
     ];
   }
-  const parts = [plain("Ready to run "), marked(ACTION_LABELS[draft.action] || draft.action)];
+  const parts = [plain("Ready to send "), marked(ACTION_LABELS[draft.action] || draft.action)];
   if (draft.email) parts.push(plain(" for "), marked(draft.email));
   parts.push(plain(". "));
-  if (draft.action === "review") parts.push(plain("This queues a review. It does "), marked("not release the hold"), plain(" by itself."));
-  if (draft.action === "remind") parts.push(plain("The owner gets one email about "), marked("the evidence deadline"), plain("."));
-  if (draft.action === "refund" && /py_1044/.test(draft.reference)) {
+  if (draft.action === "review") parts.push(plain("This checks why a refund or credit has not shown up. It does "), marked("not speed the bank"), plain(" on its own."));
+  if (draft.action === "remind") parts.push(plain("We’ll look at the bank dispute on this charge and email you "), marked("what happens next"), plain("."));
+  if (draft.action === "refund" && /1044/.test(draft.reference) && actionHasOpenDispute(draft)) {
     parts.push(
-      plain("This returns the extra $86 on "),
-      marked("py_1044"),
-      plain(". It does not answer "),
-      marked("dp_3k19"),
-      plain(", and it does not release Friday’s payout.")
+      plain("This asks us to return the extra $86 on order "),
+      marked("1044"),
+      plain(". It does "),
+      marked("not close"),
+      plain(" the dispute you opened with your bank.")
     );
   } else if (draft.action === "refund") {
-    parts.push(plain("This "), marked("refunds the payment"), plain(" and does not close an open dispute."));
+    parts.push(plain("This "), marked("requests a refund"), plain(" and does not close a bank dispute you already opened."));
   }
-  if (draft.action === "reset") parts.push(plain("This signs them out and "), marked("clears the authenticator"), plain("."));
+  if (draft.action === "reset") parts.push(plain("This signs you out and "), marked("clears the authenticator"), plain("."));
   if (draft.reference) parts.push(plain(" I’ll attach "), marked(draft.reference), plain("."));
   if (draft.note.length > 8) parts.push(plain(" Note so far: “"), marked(clipText(draft.note, 90)), plain("”."));
   return parts;
@@ -3072,67 +3403,85 @@ function initActionPage() {
   const carried = applyCaseHandoff(form);
   let locked = false;
   let lastKey = "";
-  const pause = armPause(summary, (asked) => {
-    if (locked) return null;
-    const draft = readAction(form);
-    const specific = {
-      review: { id: "release", label: "Will this release the hold?", parts: () => [plain("No. The review checks the flags. The hold lifts only after "), marked("verification and open disputes"), plain(" are clear.")] },
-      remind: { id: "who", label: "Who gets the reminder?", parts: () => [plain("It goes to the "), marked("account email"), plain(" on this form, not to the cardholder.")] },
-      refund: /py_1044/.test(draft.reference)
-        ? { id: "now", label: "Does this release Friday’s payout?", parts: () => [plain("No. Jonah gets the extra $86 back in "), marked("5 to 10 business days"), plain(". Friday’s payout stays held until "), marked("dp_3k19"), plain(" is answered in Disputes.")] }
-        : { id: "now", label: "Does this refund the customer now?", parts: () => [plain("The refund submits now. The card usually shows it in "), marked("5 to 10 business days"), plain(".")] },
-      reset: { id: "signout", label: "Will they be signed out?", parts: () => [plain("Yes. Every session ends, and they need "), marked("a new authenticator"), plain(" to get back in.")] }
-    }[draft.action];
-    if (specific && !asked.has(specific.id)) return { ...specific, onOpen() { asked.add(specific.id); } };
-    if (!asked.has("safe")) {
-      return {
-        id: "safe",
-        label: "Does anything run before I confirm?",
-        onOpen() { asked.add("safe"); },
-        parts: () => [plain("No. "), marked("Run action"), plain(" is the only control that queues it.")]
-      };
-    }
-    return null;
-  });
+  const asked = new Set();
 
-  function refresh(think) {
+  function actionShape(draft, meta) {
+    const two = draft.action === "refund" && /1044/.test(draft.reference) && actionHasOpenDispute(draft);
+    let parts;
+    if (two) {
+      parts = [plain("This asks us to return the extra $86 on order "), marked("1044"), plain(". It does "), marked("not close"), plain(" the dispute you opened with your bank.")];
+    } else if (draft.action) {
+      parts = [plain("Ready to send "), marked(ACTION_LABELS[draft.action] || draft.action), plain(".")];
+    } else {
+      parts = [plain("Pick what you want us to do. Nothing sends until you confirm.")];
+    }
+    const offers = [];
+    if (two) {
+      offers.push({
+        id: "dispute",
+        kind: "action",
+        label: "Read about refunds and bank disputes",
+        href: "article.html?id=refund-and-dispute"
+      });
+      offers.push({
+        id: "now",
+        kind: "question",
+        label: "Does this close my bank dispute?",
+        parts: () => [plain("No. The extra $86 usually shows back on your card in "), marked("5 to 10 business days"), plain(". The dispute you opened with your bank "), marked("stays open"), plain(" until the bank finishes.")],
+        onOpen() { asked.add("now"); }
+      });
+    } else {
+      const specific = {
+        review: { id: "release", label: "Will this make the refund show up today?", parts: () => [plain("No. This checks why it is missing. Credits still take "), marked("5 to 10 business days"), plain(" after they are sent.")] },
+        remind: { id: "who", label: "Who hears back?", parts: () => [plain("We’ll email "), marked("the address on this form"), plain(" about the bank dispute on this charge.")] },
+        refund: { id: "now", label: "When will I see the refund?", parts: () => [plain("The request sends now. The card usually shows it in "), marked("5 to 10 business days"), plain(".")] },
+        reset: { id: "signout", label: "Will I be signed out?", parts: () => [plain("Yes. Every session ends, and you need "), marked("a new authenticator"), plain(" to get back in.")] }
+      }[draft.action] || { id: "safe", label: "Does anything send before I confirm?", parts: () => [plain("No. "), marked("Run action"), plain(" is the only control that sends it.")] };
+      offers.push({ ...specific, kind: "question", onOpen() { asked.add(specific.id); } });
+    }
+    summary.reply({ parts, ask: "follow-up", offers, meta, phase: "drafting" });
+  }
+
+  function refresh() {
     if (locked) return;
     const draft = readAction(form);
     const key = [draft.action, draft.email, draft.reference, draft.note].join("\u0001");
     if (key === lastKey) return;
     lastKey = key;
-    summary.play(actionParts(draft), { meta: draft.action ? "Updated from this action" : "Based on this form · just now", phase: "drafting", think });
+    actionShape(draft, draft.action ? "Updated from this action" : "Based on this form · just now");
   }
 
-  summary.play(actionParts(readAction(form)), {
-    meta: carried ? "Filled from your case" : "Based on this form · just now",
-    phase: "landed"
-  });
-  pause();
+  actionShape(readAction(form), carried ? "Filled from your case" : "Based on this form · just now");
   let inputTimer = 0;
-  form.querySelector("[name='action']")?.addEventListener("change", () => {
-    refresh(220);
-    pause();
-  });
+  form.querySelector("[name='action']")?.addEventListener("change", refresh);
   ["email", "reference", "note"].forEach((name) => {
     form.querySelector(`[name='${name}']`)?.addEventListener("input", () => {
       window.clearTimeout(inputTimer);
-      inputTimer = window.setTimeout(() => {
-        refresh(240);
-        pause();
-      }, 650);
+      inputTimer = window.setTimeout(refresh, 650);
     });
   });
   summary.setAsk((value) => {
     const draft = readAction(form);
     const q = value.toLowerCase();
-    if (/release|hold|friday|payout/.test(q) && draft.action === "refund") {
-      return [plain("No. Refunding "), marked(draft.reference || "this payment"), plain(" does not release Friday’s payout. The hold waits on the open dispute.")];
+    if (/close|cancel|dispute/.test(q) && draft.action === "refund") {
+      return [plain("No. Requesting a refund of "), marked(draft.reference || "this charge"), plain(" does not close a dispute you opened with your bank.")];
     }
-    if (/release|hold/.test(q)) return [plain("A payout review does "), marked("not release the hold"), plain(" on its own.")];
-    if (/refund/.test(q)) return [plain("A refund "), marked("does not close a dispute"), plain(" on that charge.")];
-    if (/sign|authenticator|reset/.test(q)) return [plain("A reset "), marked("signs them out"), plain(" of every session.")];
-    return [plain("On “"), marked(clipText(value, 72)), plain("”: "), ...actionParts(draft)];
+    if (/release|hold|friday|payout/.test(q)) {
+      return [plain("A refund does "), marked("not close a bank dispute"), plain(". Your bank finishes that review on its own.")];
+    }
+    if (/refund/.test(q)) return [plain("A refund "), marked("does not close a bank dispute"), plain(" on that charge.")];
+    if (/sign|authenticator|reset/.test(q)) return [plain("A reset "), marked("signs you out"), plain(" of every session.")];
+    return [plain("On “"), marked(clipText(value, 72)), plain(".")];
+  });
+  summary.setNextOffer(() => {
+    if (asked.has("safe")) return null;
+    asked.add("safe");
+    return {
+      id: "safe",
+      kind: "question",
+      label: "Does anything send before I confirm?",
+      parts: () => [plain("No. "), marked("Run action"), plain(" is the only control that sends it.")]
+    };
   });
 
   form.addEventListener("submit", (event) => {
@@ -3155,39 +3504,43 @@ function initActionPage() {
       }
     });
     if (!valid) {
-      summary.play(
-        [plain("Before this can run, add "), marked(issues.join(" and ")), plain(".")],
-        { meta: "Checked the form", phase: "drafting", think: 200 }
-      );
+      summary.reply({
+        parts: [plain("Before this can run, add "), marked(issues.join(" and ")), plain(".")],
+        ask: "follow-up",
+        meta: "Checked the form",
+        phase: "drafting"
+      });
       form.querySelector(".is-invalid input, .is-invalid select, .is-invalid textarea")?.focus();
       return;
     }
     const draft = readAction(form);
     const runId = `ACT-${Math.floor(10000 + Math.random() * 89999)}`;
     locked = true;
-    summary.hideQuestion();
-    summary.play(
-      [
-        plain(`${ACTION_LABELS[draft.action]} is queued for `),
+    summary.reply({
+      parts: [
+        plain(`${ACTION_LABELS[draft.action]} is in for `),
         marked(draft.email),
-        plain(". The log id is "),
+        plain(". Your confirmation is "),
         marked(runId),
-        plain(draft.reference ? `. Reference ${draft.reference} is attached.` : ".")
+        plain(draft.reference ? `. Order ${draft.reference} is attached.` : ".")
       ],
-      { meta: `Action ${runId}`, phase: "submitted", label: "Action queued", think: 280 }
-    );
+      ask: "hidden",
+      offers: [],
+      meta: `Action ${runId}`,
+      phase: "submitted"
+    });
     const card = document.getElementById("action-card");
     card.innerHTML = `
       <div class="success">
         <div class="success-mark" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"></path></svg>
         </div>
-        <h2>Action queued</h2>
-        <p>${escapeHtml(ACTION_LABELS[draft.action])} will run for ${escapeHtml(draft.email)}.</p>
+        <h2>Request sent</h2>
+        <p>${escapeHtml(ACTION_LABELS[draft.action])} is in for ${escapeHtml(draft.email)}.</p>
         <div class="case-id">${runId}</div>
         <div class="success-actions">
           <a class="btn-secondary" href="index.html">Back to help center</a>
-          <button type="button" class="btn-primary" id="another-action">Run another</button>
+          <button type="button" class="btn-primary" id="another-action">Send another</button>
         </div>
       </div>`;
     document.getElementById("another-action").addEventListener("click", () => window.location.reload());
